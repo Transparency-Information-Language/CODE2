@@ -1,6 +1,7 @@
 import sqlite3
 import json
 import requests
+import ssl
 
 
 def getDomainByUrl(url):
@@ -11,6 +12,65 @@ def getDomainByUrl(url):
         url.pop(0)
     url = ".".join(urlSplit)
     return url
+
+
+def getTilthubScore(domain):
+    tiltHubAPI = "http://ec2-3-64-237-95.eu-central-1.compute.amazonaws.com:8080/tilt/tilt"
+    response = requests.get(tiltHubAPI, auth=("admin", "secret"))
+    tiltHubEntry = json.loads(response.content)
+
+    tiltDoc = {
+        "score": "0",
+        "Data Disclosed": "",
+        "Third Country Transfers": "",
+        "Right to Withdraw Consent": "",
+        "Right to Complain": "",
+        "Data Protection Officer": "",
+        "Right to Data Portability": "",
+        "Right to Information": "",
+        "Right to Rectification or Deletion": "",
+        "Automated Decision Making": "",
+    }
+
+    for i in range(len(tiltHubEntry)):
+        url = tiltHubEntry[i]["meta"]["url"].split("//")[1]
+        score = 0  # low score is better
+
+        if getDomainByUrl(url) == domain:
+            tiltInfo = tiltHubEntry[i]
+
+            tiltDoc["Right to Complain"] = str(
+                tiltInfo["rightToComplain"]["available"])  # T/F
+            tiltDoc["Right to Withdraw Consent"] = str(
+                tiltInfo["rightToWithdrawConsent"]["available"])  # T/F
+            tiltDoc["Right to Data Portability"] = str(
+                tiltInfo["rightToDataPortability"]["available"])  # T/F
+            tiltDoc["Right to Information"] = str(
+                tiltInfo["rightToInformation"]["available"])  # T/F
+            tiltDoc["Right to Rectification or Deletion"] = str(
+                tiltInfo["rightToRectificationOrDeletion"]["available"])  # T/F
+            tiltDoc["Automated Decision Making"] = str(
+                tiltInfo["automatedDecisionMaking"]["inUse"])  # T/F
+
+            for key, value in tiltDoc["tilthub"].items():
+                if str(value) == "False":
+                    score += 0.3
+
+            # name/email/phone/country/address exist #TODO: look for at least a name or email
+            tiltDoc["Data Protection Officer"] = str(
+                tiltInfo["dataProtectionOfficer"]["name"])
+
+            if tiltInfo["dataProtectionOfficer"]["name"] is None:
+                score += 0.3
+
+            tiltDoc["Third Country Transfers"] = str(
+                len(tiltInfo["thirdCountryTransfers"]))  # number of countries
+
+            if len(tiltInfo["thirdCountryTransfers"]) > 1:
+                score += 0.3
+
+    tiltDoc["score"] = score
+    return tiltDoc
 
 
 def getScore(domains):
@@ -81,61 +141,8 @@ def saveLabel(dictionary, domain):
             continue
 
 
-def getTilthubScore(domain):
-    tiltHubAPI = "http://ec2-3-64-237-95.eu-central-1.compute.amazonaws.com:8080/tilt/tilt"
-    response = requests.get(tiltHubAPI, auth=("admin", "secret"))
-    tiltHubEntry = json.loads(response.content)
-
-    tiltDoc = {
-        "score": "0",
-        "Data Disclosed": "",
-        "Third Country Transfers": "",
-        "Right to Withdraw Consent": "",
-        "Right to Complain": "",
-        "Data Protection Officer": "",
-        "Right to Data Portability": "",
-        "Right to Information": "",
-        "Right to Rectification or Deletion": "",
-        "Automated Decision Making": "",
-    }
-
-    for i in range(len(tiltHubEntry)):
-        url = tiltHubEntry[i]["meta"]["url"].split("//")[1]
-        score = 0  # low score is better
-
-        if getDomainByUrl(url) == domain:
-            tiltInfo = tiltHubEntry[i]
-
-            tiltDoc["Right to Complain"] = str(
-                tiltInfo["rightToComplain"]["available"])  # T/F
-            tiltDoc["Right to Withdraw Consent"] = str(
-                tiltInfo["rightToWithdrawConsent"]["available"])  # T/F
-            tiltDoc["Right to Data Portability"] = str(
-                tiltInfo["rightToDataPortability"]["available"])  # T/F
-            tiltDoc["Right to Information"] = str(
-                tiltInfo["rightToInformation"]["available"])  # T/F
-            tiltDoc["Right to Rectification or Deletion"] = str(
-                tiltInfo["rightToRectificationOrDeletion"]["available"])  # T/F
-            tiltDoc["Automated Decision Making"] = str(
-                tiltInfo["automatedDecisionMaking"]["inUse"])  # T/F
-
-            for key, value in tiltDoc["tilthub"].items():
-                if str(value) == "False":
-                    score += 0.3
-
-            # name/email/phone/country/address exist #TODO: look for at least a name or email
-            tiltDoc["Data Protection Officer"] = str(
-                tiltInfo["dataProtectionOfficer"]["name"])
-
-            if tiltInfo["dataProtectionOfficer"]["name"] is None:
-                score += 0.3
-
-            tiltDoc["Third Country Transfers"] = str(
-                len(tiltInfo["thirdCountryTransfers"]))  # number of countries
-
-            if len(tiltInfo["thirdCountryTransfers"]) > 1:
-                score += 0.3
-
-    # TODO: think about a good label calculation algorithm
-    tiltDoc["score"] = score
-    return tiltDoc
+#tiltHubAPI = "http://ec2-3-64-237-95.eu-central-1.compute.amazonaws.com:8080/tilt/tilt"
+tiltHubAPI = "https://3.64.237.95/tilt/tilt"
+response = requests.get(tiltHubAPI, auth=("admin", "secret"), verify=False)
+tiltHubEntry = json.loads(response.content)
+print(tiltHubEntry)

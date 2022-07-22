@@ -3,19 +3,18 @@
     "description": "A Chrome extension for tilt",
     "version": "1.0",
     "manifest_version": 3,
-
-    "content_scripts":[
+    "content_scripts": [
         {
-            "matches": ["https://*.google.*"],
-            "js": ["content.js"],
-            "css": ["style.css"]
+            "matches": [
+                "*://*.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
         }
-    ],
-    "permissions": [
-        "storage"
-    ],
-    "web_accessible_resources": [
-        "images/*.png"
     ],
     "action": {
         "default_icons": {
@@ -25,5 +24,21 @@
         },
         "default_title": "TILTension",
         "default_popup": "popup.html"
-    }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "tiltdb.json"
+            ],
+            "matches": [
+                "*://*.google.com/*"
+            ],
+            "extension_ids": [
+                "aefaghjpnilhnhifccckcbbiohfnknbm"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
 }
