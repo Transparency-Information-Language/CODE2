@@ -10,9 +10,6 @@
             ],
             "js": [
                 "content.js"
-            ],
-            "css": [
-                "style.css"
             ]
         }
     ],
@@ -28,7 +25,8 @@
     "web_accessible_resources": [
         {
             "resources": [
-                "tiltdb.json"
+                "tiltdb.json",
+                "images/*.png"
             ],
             "matches": [
                 "*://*.google.com/*"
