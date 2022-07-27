@@ -56,11 +56,10 @@ def getTilthubScore(domain):
                 if str(value) == "False":
                     score += 0.3
 
-            # name/email/phone/country/address exist #TODO: look for at least a name or email
             tiltDoc["Data Protection Officer"] = str(
-                tiltInfo["dataProtectionOfficer"]["name"])
+                tiltInfo["dataProtectionOfficer"]["email"])
 
-            if tiltInfo["dataProtectionOfficer"]["name"] is None:
+            if tiltInfo["dataProtectionOfficer"]["email"] is None:
                 score += 0.3
 
             tiltDoc["Third Country Transfers"] = str(
@@ -141,8 +140,7 @@ def saveLabel(dictionary, domain):
             continue
 
 
-#tiltHubAPI = "http://ec2-3-64-237-95.eu-central-1.compute.amazonaws.com:8080/tilt/tilt"
-tiltHubAPI = "https://3.64.237.95/tilt/tilt"
+# tiltHubAPI = "http://ec2-3-64-237-95.eu-central-1.compute.amazonaws.com:8080/tilt/tilt" https needed!
 response = requests.get(tiltHubAPI, auth=("admin", "secret"), verify=False)
 tiltHubEntry = json.loads(response.content)
 print(tiltHubEntry)
