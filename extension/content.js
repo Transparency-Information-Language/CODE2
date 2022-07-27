@@ -1,7 +1,7 @@
 let tiltdb = chrome.runtime.getURL("tiltdb.json");
 let urlElements = document.getElementsByClassName("yuRUbf");
 
-const labels = [chrome.runtime.getURL("images/not_found.png"),
+const labels = [chrome.runtime.getURL("images/not_found_32.png"),
 chrome.runtime.getURL("images/green_icon_32.png"),
 chrome.runtime.getURL("images/yellow_icon_32.png"),
 chrome.runtime.getURL("images/red_icon_32.png")
