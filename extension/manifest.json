@@ -15,12 +15,10 @@
     ],
     "action": {
         "default_icons": {
-            "16": "",
-            "24": "",
-            "32": ""
+            "16": "images/green_icon_16.png",
+            "32": "images/green_icon_32.png"
         },
-        "default_title": "TILTension",
-        "default_popup": "popup.html"
+        "default_title": "TILTension"
     },
     "web_accessible_resources": [
         {
@@ -38,5 +36,10 @@
     ],
     "permissions": [
         "storage"
-    ]
+    ],
+    "icons": {
+    "16": "images/green_icon_16.png",
+    "32": "/images/green_icon_32.png",
+    "128": "/images/green_icon_128.png"
+  }
 }
