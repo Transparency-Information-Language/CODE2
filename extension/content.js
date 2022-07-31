@@ -2,10 +2,10 @@ let tiltdb = chrome.runtime.getURL("tiltdb.json");
 let urlElements = document.getElementsByClassName("yuRUbf");
 
 const labels = [
-  chrome.runtime.getURL("images/not_found_32.png"),
-  chrome.runtime.getURL("images/green_icon_32.png"),
-  chrome.runtime.getURL("images/yellow_icon_32.png"),
-  chrome.runtime.getURL("images/red_icon_32.png"),
+  chrome.runtime.getURL("images/not_found_16.png"),
+  chrome.runtime.getURL("images/green_icon_16.png"),
+  chrome.runtime.getURL("images/yellow_icon_16.png"),
+  chrome.runtime.getURL("images/red_icon_16.png"),
 ];
 
 let tiltDoc = {
@@ -79,7 +79,6 @@ async function getScore(tiltHubEntry) {
 
 async function getAllTiltScores() {
   let tiltAllScores = {};
-  //calculate tilt score for all tiltHub entries
 
   await fetch(tiltdb)
     .then((response) => response.json())
@@ -106,11 +105,11 @@ async function printLabels(score, heading) {
 
   var image = new Image();
   image.src = labels[result];
+  image.alt = "Label = " + result;
   heading.prepend(image);
 }
 
 async function main() {
-  let label = 0;
   let tiltAllScores = await getAllTiltScores();
   let results = {};
   let index = 0;
@@ -127,7 +126,7 @@ async function main() {
     });
     console.log("Domain: " + domain + ", score: " + results[domain]);
     const headings = document.getElementsByClassName("LC20lb MBeuO DKV0Md");
-    label = await printLabels(results[domain], headings[index]);
+    await printLabels(results[domain], headings[index]);
     index++;
   }
 }

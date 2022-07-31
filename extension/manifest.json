@@ -34,9 +34,6 @@
             ]
         }
     ],
-    "permissions": [
-        "storage"
-    ],
     "icons": {
     "16": "images/green_icon_16.png",
     "32": "/images/green_icon_32.png",
