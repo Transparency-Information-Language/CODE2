@@ -1,0 +1,152 @@
+/*http://www.wickham43.net/tutorial.css*/
+.tiltension {
+    margin-right: -2.5em;
+    width: 30px;
+    float: left;
+    cursor: pointer;
+}
+.tiltension .popup  {
+    font-size: Helvetica, Arial, sans-serif;
+    width: 500px;
+    padding: 0px;
+    margin-left: 33%;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    border-radius: 15px;
+    /*visibility: hidden;*/
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color: white;
+    position: absolute;
+    display: none;
+    z-index: 99999;
+}
+
+.tiltension:hover .popup { 
+	background-color: #e2e2e9; 
+    visibility: visible;
+    display: block;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.tilt_summary{
+    border-style: ridge;
+    border-color: grey;
+    padding: 0.5em;
+    margin: 0.5em 0.1em;
+}
+
+#score_explanation ul{
+    padding-left: 1em;
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.code-emoji-flag {
+    height: 0.8em;
+    margin-right: 0.25em;
+}
+.code-selector-img {
+    width: 25px;
+    float: left;
+    margin-left: -2.25em;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row {
+    margin-left: auto;
+    margin-top: -2px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Clear floats after image containers */
+
+.list .entry .content {
+    font-size: Helvetica, Arial, sans-serif;
+    margin-left: -2.25em;
+    width: 125px;
+    padding: 0px;
+    margin-left: -100px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background: white;
+    z-index: 99999;
+}
+
+.content li {
+    display: flex; /*display: inline;*/
+    align-items: flex-end;  /* delete this line*/
+}
+/*does changing this has any negativ effect?*/
+
+
+.content span {
+    color: gray;
+}
+
+.inner {
+    padding: 10px;
+    font-size: 11px;
+}
+
+.icons {
+    width: 20px;
+    height: auto;
+    padding-right: 1px;
+    margin: 2px;
+}
+
+
+.list .entry:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.list .entry .content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    margin-right: -2.5em;
+    width: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.code-selector {
+    width: 25px;
+    float: left;
+    margin-left: -2.25em;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+.percentage {
+    display: inline-block;
+    margin-left: auto;
+    font-weight: bold;
+}

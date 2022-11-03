@@ -20,6 +20,8 @@ let tiltDoc = {
   "Automated Decision Making": "",
 };
 
+let countries = [];
+
 async function getDomain(url) {
   url = url.split("/")[0];
   let urlSplit = url.split(".");
@@ -48,6 +50,7 @@ async function getScore(tiltHubEntry) {
   tiltDoc["Automated Decision Making"] =
     tiltHubEntry["automatedDecisionMaking"]["available"];
 
+    /****** Achtung: hier gibt es "negativpunkte", wenn automated decisionmaking nicht genutzt wird!!!!!*/
   Object.values(tiltDoc).forEach((value) => {
     if (!value) {
       score += 0.3;
@@ -77,8 +80,8 @@ async function getScore(tiltHubEntry) {
   return score;
 }
 
-async function getAllTiltScores() {
-  let tiltAllScores = {};
+async function getAllTilts(){
+  let tiltEntries = {};
 
   await fetch(tiltdb)
     .then((response) => response.json())
@@ -87,14 +90,38 @@ async function getAllTiltScores() {
         let tiltDomain = await getDomain(
           tiltHubEntry["meta"]["url"].split("//")[1]
         );
-        score = await getScore(tiltHubEntry);
-        tiltAllScores[tiltDomain] = score;
+        tiltEntries[tiltDomain] = tiltHubEntry;
+        var thirdCountrytransfers = tiltHubEntry.thirdCountryTransfers;
+        thirdCountrytransfers.forEach(element => {
+          var country = element.country;
+          if(typeof country === 'string' && country.match(/^[A-Z][A-Z]$/)){
+            countries.push(country);
+            console.log("country ", country);
+            /* tried to use unicode emojis here - however, this does not work for flags in windows/linux chrome
+            const codePoints = country.split('').map(char =>  127397 + char.charCodeAt());
+            console.log("code points ", ...codePoints, " as string:  ", String.fromCodePoint(...codePoints));
+            countries[country] = String.fromCodePoint(...codePoints);
+            */
+          }
+        });
       });
     });
+    console.log("TiltEntries are: ", tiltEntries);
+    console.log("Countries are ", countries );
+    return tiltEntries;
+}
+
+async function getAllTiltScores(tiltEntries) {
+  let tiltAllScores = {};
+  for (const key of Object.keys(tiltEntries)){
+    let score = await getScore(tiltEntries[key]);
+    tiltAllScores[key] = score;
+  }
+  console.log("TiltScores are: ", tiltAllScores);
   return tiltAllScores;
 }
 
-async function printLabels(score, heading) {
+async function printLabels(score, heading, tiltEntry) {
   let result;
 
   if (score == 0) {
@@ -102,18 +129,147 @@ async function printLabels(score, heading) {
   } else {
     result = score < 1 ? 1 : score < 2 ? 2 : 3;
   }
-
   var image = new Image();
+  image.classList.add("code-selector-img");
   image.src = labels[result];
   image.alt = "Label = " + result;
-  heading.prepend(image);
+  image.onmouseover = fill_popup(score, tiltEntry);
+  
+  var wrapper = document.createElement("div");
+  wrapper.classList.add("tiltension");
+  wrapper.appendChild(image);
+  
+  if(score ==0){
+    var popup = document.createElement("div");
+    popup.classList.add("popup");
+    popup.innerHTML = "<h2>Leider liegen zu diesem Anbieter keine TILT Informationen vor.</h2>";
+    wrapper.appendChild(popup);
+  }else{
+    wrapper.appendChild(fill_popup(score, tiltEntry));
+  }
+
+  console.log("this is the wrapper", wrapper);
+  appendToG(heading.parentNode, wrapper);
+  document.getElementById("click_here").addEventListener("click", explainScore);
+}
+
+function appendToG(node, wrapper){
+  if(node.classList.contains("g")){
+    node.insertBefore(wrapper, node.firstChild);
+  }else{
+    appendToG(node.parentNode, wrapper);
+  }
+}
+
+function fill_popup(score, tiltEntry){
+  console.log("in popup tilt enty ", tiltEntry);
+
+  var popup = document.createElement("div");
+  popup.classList.add("popup");
+  popup.innerHTML = "<h2>TILT Informationen zu <i>"+tiltEntry.meta.name+"</i></h2>";
+
+  /**
+   * Zusammenfassung der wichtigsten TILT Merkmale
+   **/
+  var tilt_div= document.createElement("div");
+  tilt_div.classList.add("tilt_summary");
+  tilt_div.innerHTML += "<h4>Zusammenfassung der Transparenzinformationen:</h4>";
+  /*Verantwortlicher*/
+  var list = document.createElement("ul");
+  var list_element = document.createElement("li");
+  list_element.classList.add("tilt.controller");
+  let list_element_text = "<b>Verantwortlicher (e-Mail):</b> ";
+  let email = tiltEntry.dataProtectionOfficer.email;
+  if(email!=null){
+    console.log("found mail: ", email);
+    list_element_text += email;
+  }else{
+    list_element_text += "<span style=\"color:red;\">Leider liegt keine e-Mail-Adresse vor.</span>";
+  }
+  console.log("list_element_text", list_element_text);
+  list_element.innerHTML = list_element_text;
+  list.appendChild(list_element);
+  /*Third Country Transfers: 
+  ** due to Chrome-Windows/Unix Bug, UNICODE emoji-flags do not work. 
+  ** Instead, we use the GPL licensed data set from: https://github.com/cristiroma/countries/
+  */
+  list_element = document.createElement("li");
+  list_element.classList.add("tilt.country_transfers");
+  list_element_text = "<b>Datentransfer in Drittstaaten:</b> ";
+  let transfers = tiltEntry.thirdCountryTransfers;
+  if(transfers.length==0){
+    list_element_text += "<span style=\"color:red;\">Leider liegen keine Informationen zu Drittstaatentransfers vor.</span>";
+    list_element.innerHTML = list_element_text;
+  }else{
+    list_element.innerHTML = list_element_text;
+    transfers.forEach(element => {
+      if(countries.includes(element.country)){
+        console.log("Found country: ", element.country);
+        /*
+        for unicode emojis
+        popup.innerHTML = countries[element.country];
+        */
+        //popup.innerHTML += "<img src=\"images/cristiroma_countries_data_flags_SVG/"+element.country+".svg\" width=\"5px\" alt=\""+element.country+"\"></img>";
+        var image = new Image();
+        image.classList.add("code-emoji-flag");
+        image.src = chrome.runtime.getURL("images/cristiroma_countries_data_flags_SVG/"+element.country+".svg");
+        image.alt = "Country = " + element.country;
+        list_element.appendChild(image);
+      }else{
+        list_element.innerHTML += " " + element.country +" "
+      }
+    });
+    list.appendChild(list_element);
+  }
+  /*Data Disclosed */
+  list_element = document.createElement("li");
+  list_element.classList.add("tilt.data_disclosed");
+  list_element_text = "<b>Daten, die verarbeitet werden:</b> ";
+  //let transfers = tiltEntry.thirdCountryTransfers;
+  list.append(list_element);
+  /*Automated Decision Making */
+  list_element = document.createElement("li");
+  list_element.classList.add("tilt.decision_making");
+  list_element_text = "<b>Automatisierte Entscheidungsfindung:</b> ";
+  if(tiltEntry.automatedDecisionMaking.inUse){
+    console.log("automated decisionmaking: ", tiltEntry.automatedDecisionMaking.inUse);
+    list_element_text += "<span style=\"color:red;\">wird genutzt</span>";
+  }else{
+    list_element_text += "<span>wird nicht genutzt</span>";
+  }
+  list_element.innerHTML = list_element_text;
+  list.append(list_element);
+
+  tilt_div.appendChild(list);
+  popup.appendChild(tilt_div);  
+  popup.innerHTML += "<p> Die Labels werden auf Grund von einem Transparenzscore berechnet. Für diese Webseite beträgt der Score : "+score+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest klicke bitte <a id=\"click_here\">hier</a></p><p id=\"score_explanation\"></p>"; /*TODO Link mit Inhalt füllen bzw. Popup verlängern*/
+  console.log("popup = ", popup);
+  return popup;
+}
+
+function explainScore(){
+  console.log("explaining score....");
+  var element = document.getElementById("score_explanation");
+  console.log("element ", element);
+  if(element.innerHTML ==""){
+    element.innerHTML = "Die Berechnung des Transparenzscores folgt zur Zeit sehr einfachen Regeln und auf Basis des TILT-Eintrags. Daraufhin wird jeder Webseite eines der drei Label zugewiesen: <br /> 1. Erklärung der Labels: <ul><li>eine Website erhält ein grünes Label, wenn der Score unter 1 ist</li><li>eine Website erhält ein gelbes Label, wenn der Score unter 2 ist</li><li>eine Website erhält ein rotes Label, wenn der Score höher ist</li></ul> 2. Erklärung des Scores: Es gibt verschiedene Faktoren, die den Score beeinflussen. Der Score erhöht sich, wenn: <ul><li>ein Recht nicht verfügbar ist (z.B. wenn das Recht zur Datenauskunft nicht in der Datenschutzerklärung erwähnt wird)</li><li>automatisierte Enscheidungsfindung genutzt wird</li><li>keine e-Mail-Adresse des Verantwortlichen angegeben ist</li><li>Drittstaatentransfers stattfinden</li></ul>";
+  }else{
+    element.innerHTML = "";
+  }
+
+  console.log("element (new)", document.getElementById("score_explanation"));
 }
 
 async function main() {
-  let tiltAllScores = await getAllTiltScores();
+  let tiltEntries = await getAllTilts();
+  let tiltAllScores = await getAllTiltScores(tiltEntries);
   let results = {};
   let index = 0;
 
+  var meta = document.createElement('meta');  
+  meta.charset = "UTF-16";
+  document.getElementsByTagName('head')[0].appendChild(meta);
+  
   for (let e of urlElements) {
     let url = JSON.stringify(e.children[0].href).replace("https://", "");
     let domain = await getDomain(url);
@@ -126,7 +282,7 @@ async function main() {
     });
     console.log("Domain: " + domain + ", score: " + results[domain]);
     const headings = document.getElementsByClassName("LC20lb MBeuO DKV0Md");
-    await printLabels(results[domain], headings[index]);
+    await printLabels(results[domain], headings[index], tiltEntries[domain]);
     index++;
   }
 }

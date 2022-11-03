@@ -1,6 +1,6 @@
 {
     "name": "TILTension",
-    "description": "A Chrome extension for tilt",
+    "description": "A Chrome extension for TILT",
     "version": "1.0",
     "manifest_version": 3,
     "content_scripts": [
@@ -10,6 +10,9 @@
             ],
             "js": [
                 "content.js"
+            ],
+            "css":[
+                "css/style.css"
             ]
         }
     ],
@@ -24,10 +27,12 @@
         {
             "resources": [
                 "tiltdb.json",
-                "images/*.png"
+                "images/*.png",
+                "images/cristiroma_countries_data_flags_SVG/*.svg"
             ],
             "matches": [
-                "*://*.google.com/*"
+                "*://*.google.com/*",
+                "*://*.google.de/*"
             ],
             "extension_ids": [
                 "aefaghjpnilhnhifccckcbbiohfnknbm"
