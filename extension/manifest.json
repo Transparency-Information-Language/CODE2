@@ -32,7 +32,7 @@
             ],
             "matches": [
                 "*://*.google.com/*",
-                "*://*.google.de/*"
+                "*://www.google.de/*"
             ],
             "extension_ids": [
                 "aefaghjpnilhnhifccckcbbiohfnknbm"

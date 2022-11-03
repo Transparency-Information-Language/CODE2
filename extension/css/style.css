@@ -43,7 +43,7 @@
     list-style-position: outside;
 }
 
-#data_disclosed{
+.tilt_entry_list{
     padding-left: 1em;
     list-style-type: square;
     list-style-position: outside;
