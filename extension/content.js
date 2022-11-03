@@ -33,7 +33,7 @@ async function getDomain(url) {
 
 async function getScore(tiltHubEntry) {
   let score = 0;
-  console.log("computing score for ", tiltHubEntry.meta.name, " initial score is ", score);
+  //console.log("computing score for ", tiltHubEntry.meta.name, " initial score is ", score);
 
   /* fill right tos */
   tiltDoc["Right to Complain"] = tiltHubEntry["rightToComplain"]["available"];
@@ -51,7 +51,7 @@ async function getScore(tiltHubEntry) {
   let counter = 0;
   Object.values(tiltDoc).forEach((value) => {
     if (!value) {
-      console.log("Missing right to: ", counter);
+      //console.log("Missing right to: ", counter);
       rights = true;
     }
     counter++;
@@ -59,37 +59,37 @@ async function getScore(tiltHubEntry) {
     
   /* set score */
   if(rights){
-    console.log(" increased score due to missing right to");
+    //console.log(" increased score due to missing right to");
     score += 0.6;
   }
   if(tiltHubEntry["automatedDecisionMaking"]["available"]){
-    console.log(" increased score due to automated descisionmaking ", tiltHubEntry["automatedDecisionMaking"]["available"]);
+    //console.log(" increased score due to automated descisionmaking ", tiltHubEntry["automatedDecisionMaking"]["available"]);
     score +=0.6;
   }
   if ((tiltHubEntry["dataProtectionOfficer"]["email"] == null)) {
-    console.log(" increased score due to missing mail");
+    //console.log(" increased score due to missing mail");
     score += 0.6;
   }
   if (tiltHubEntry["thirdCountryTransfers"].length > 1) {
-    console.log(" increased score due to length of countries >1");
+    //console.log(" increased score due to length of countries >1");
     score += 0.6;
   }else if((tiltHubEntry["thirdCountryTransfers"].length == 1 )&& (tiltHubEntry["thirdCountryTransfers"][0].country !== null)){
     if(tiltHubEntry["thirdCountryTransfers"][0].country.length > 0){
-      console.log(" increased score due to countries include one real country");
+      //console.log(" increased score due to countries include one real country");
       score += 0.6;
     }
   }
   if (tiltHubEntry["dataDisclosed"].length > 1) {
-    console.log(" increased score due to length of data disclosed >1");
+    //console.log(" increased score due to length of data disclosed >1");
     score += 0.6;
   }else if((tiltHubEntry["dataDisclosed"].length == 1 )&& (tiltHubEntry["dataDisclosed"][0].category !== null)){
     if(tiltHubEntry["dataDisclosed"][0].category.length > 0){
-      console.log(" increased score due to  data disclosed one real item");
+      //console.log(" increased score due to  data disclosed one real item");
       score += 0.6;
     }
   }
 
-  console.log(" final score is ", score);
+  //console.log(" final score is ", score);
   return score;
 }
 
@@ -170,8 +170,7 @@ function appendToG(node, wrapper){
 }
 
 function fill_popup(score, tiltEntry){
-  console.log("in popup tilt enty ", tiltEntry, " with score ", score, " restarting computation of score....");
-  getScore(tiltEntry);
+  //console.log("in popup tilt enty ", tiltEntry, " with score ", score, " restarting computation of score....");
 
   var popup = document.createElement("div");
   popup.classList.add("popup");
@@ -204,7 +203,7 @@ function fill_popup(score, tiltEntry){
   list_element.classList.add("tilt_data_disclosed");
   list_element_text = "<b>Datenkategorien, die verarbeitet werden:</b> <ul class=\"tilt_entry_list\">";
   let data_disclosed = tiltEntry.dataDisclosed;
-  console.log("Data Disclosed ", data_disclosed);
+  //console.log("Data Disclosed ", data_disclosed);
   data_disclosed.forEach(element => {
     if(element.category !== null){
       if(element.category.length > 0){
@@ -232,7 +231,6 @@ function fill_popup(score, tiltEntry){
     list_element.innerHTML = list_element_text;
     transfers.forEach(element => {
       if(countries.includes(element.country)){
-        console.log("Found country: ", element.country);
         /*
         for unicode emojis
         popup.innerHTML = countries[element.country];
@@ -249,7 +247,7 @@ function fill_popup(score, tiltEntry){
     });
     try{
     if(transfers.length==1 && (typeof transfers[0].country == null || transfers[0].country.length === 0)){
-      console.log("only one element in transfers ", transfers[0]);
+      //console.log("only one element in transfers ", transfers[0]);
       list_element_text += "<span>Es liegen keine Informationen zu Drittstaatentransfers vor.</span>";
       list_element.innerHTML = list_element_text;
     }} catch (e){
@@ -309,7 +307,7 @@ function fill_popup(score, tiltEntry){
   list_element.classList.add("tilt.decision_making");
   list_element_text = "<b>Automatisierte Entscheidungsfindung:</b> ";
   if(tiltEntry.automatedDecisionMaking.inUse){
-    console.log("automated decisionmaking: ", tiltEntry.automatedDecisionMaking.inUse);
+    //console.log("automated decisionmaking: ", tiltEntry.automatedDecisionMaking.inUse);
     list_element_text += "<span style=\"color:red;\">wird genutzt</span>";
   }else{
     list_element_text += "<span>wird nicht genutzt</span>";
@@ -349,7 +347,12 @@ async function main() {
   for (let e of urlElements) {
     let url = JSON.stringify(e.children[0].href).replace("https://", "");
     let domain = await getDomain(url);
+    console.log("inspecting domain ", domain);
+    if(domain === "wikipedia.de" || domain === "wikipedia.org"){
+      domain = "wikimedia.org";
+    }
     results[domain] = 0;
+
 
     Object.keys(tiltAllScores).forEach(async (key) => {
       if (key == domain) {
