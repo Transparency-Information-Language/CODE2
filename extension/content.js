@@ -47,10 +47,10 @@ async function getScore(tiltHubEntry) {
     tiltHubEntry["rightToInformation"]["available"];
   tiltDoc["Right to Rectification or Deletion"] =
     tiltHubEntry["rightToRectificationOrDeletion"]["available"];
-  tiltDoc["Automated Decision Making"] =
-    tiltHubEntry["automatedDecisionMaking"]["available"];
+  // in order to preserve logic, we convert true to mean something good!
+  tiltDoc["Automated Decision Making"] = !(
+    tiltHubEntry["automatedDecisionMaking"]["available"]);
 
-    /****** Achtung: hier gibt es "negativpunkte", wenn automated decisionmaking nicht genutzt wird!!!!!*/
   Object.values(tiltDoc).forEach((value) => {
     if (!value) {
       score += 0.3;
@@ -69,12 +69,23 @@ async function getScore(tiltHubEntry) {
 
   if (tiltHubEntry["thirdCountryTransfers"].length > 1) {
     score += 0.3;
+  }else if((tiltHubEntry["thirdCountryTransfers"].length == 1 )&& (tiltHubEntry["thirdCountryTransfers"][0].country !== null)){
+    console.log("During prep, thirdcountrys are of length 1 and value is ", tiltHubEntry["thirdCountryTransfers"][0]);
+    if(tiltHubEntry["thirdCountryTransfers"][0].country.length > 0){
+      console.log(" - that is why we updated the score");
+      score += 0.3;
+    }
   }
 
   tiltDoc["Data Disclosed"] = tiltHubEntry["dataDisclosed"];
-
-  if (tiltHubEntry["dataDisclosed"] != null) {
+  if (tiltHubEntry["dataDisclosed"].length > 1) {
     score += 0.3;
+  }else if((tiltHubEntry["dataDisclosed"].length == 1 )&& (tiltHubEntry["dataDisclosed"][0].category !== null)){
+    console.log("During prep, data disclosed are of length 1 and value is ", tiltHubEntry["dataDisclosed"][0]);
+    if(tiltHubEntry["dataDisclosed"][0].category.length > 0){
+      console.log(" - that is why we updated the score");
+      score += 0.3;
+    }
   }
 
   return score;
@@ -96,18 +107,12 @@ async function getAllTilts(){
           var country = element.country;
           if(typeof country === 'string' && country.match(/^[A-Z][A-Z]$/)){
             countries.push(country);
-            console.log("country ", country);
-            /* tried to use unicode emojis here - however, this does not work for flags in windows/linux chrome
-            const codePoints = country.split('').map(char =>  127397 + char.charCodeAt());
-            console.log("code points ", ...codePoints, " as string:  ", String.fromCodePoint(...codePoints));
-            countries[country] = String.fromCodePoint(...codePoints);
-            */
           }
         });
       });
     });
     console.log("TiltEntries are: ", tiltEntries);
-    console.log("Countries are ", countries );
+    //console.log("Countries are ", countries );
     return tiltEntries;
 }
 
@@ -117,7 +122,7 @@ async function getAllTiltScores(tiltEntries) {
     let score = await getScore(tiltEntries[key]);
     tiltAllScores[key] = score;
   }
-  console.log("TiltScores are: ", tiltAllScores);
+  //console.log("TiltScores are: ", tiltAllScores);
   return tiltAllScores;
 }
 
@@ -133,13 +138,15 @@ async function printLabels(score, heading, tiltEntry) {
   image.classList.add("code-selector-img");
   image.src = labels[result];
   image.alt = "Label = " + result;
-  image.onmouseover = fill_popup(score, tiltEntry);
+  if(score != 0){
+    image.onmouseover = fill_popup(score, tiltEntry);
+  }
   
   var wrapper = document.createElement("div");
   wrapper.classList.add("tiltension");
   wrapper.appendChild(image);
   
-  if(score ==0){
+  if(score == 0){
     var popup = document.createElement("div");
     popup.classList.add("popup");
     popup.innerHTML = "<h2>Leider liegen zu diesem Anbieter keine TILT Informationen vor.</h2>";
@@ -162,7 +169,7 @@ function appendToG(node, wrapper){
 }
 
 function fill_popup(score, tiltEntry){
-  console.log("in popup tilt enty ", tiltEntry);
+  console.log("in popup tilt enty ", tiltEntry, " with score ", score);
 
   var popup = document.createElement("div");
   popup.classList.add("popup");
@@ -177,7 +184,7 @@ function fill_popup(score, tiltEntry){
   /*Verantwortlicher*/
   var list = document.createElement("ul");
   var list_element = document.createElement("li");
-  list_element.classList.add("tilt.controller");
+  list_element.classList.add("tilt_controller");
   let list_element_text = "<b>Verantwortlicher (e-Mail):</b> ";
   let email = tiltEntry.dataProtectionOfficer.email;
   if(email!=null){
@@ -194,13 +201,11 @@ function fill_popup(score, tiltEntry){
   ** Instead, we use the GPL licensed data set from: https://github.com/cristiroma/countries/
   */
   list_element = document.createElement("li");
-  list_element.classList.add("tilt.country_transfers");
+  list_element.classList.add("tilt_country_transfers");
   list_element_text = "<b>Datentransfer in Drittstaaten:</b> ";
   let transfers = tiltEntry.thirdCountryTransfers;
-  if(transfers.length==0){
-    list_element_text += "<span style=\"color:red;\">Leider liegen keine Informationen zu Drittstaatentransfers vor.</span>";
-    list_element.innerHTML = list_element_text;
-  }else{
+  console.log("For ", tiltEntry.meta.name, " the transfers are ", transfers);
+
     list_element.innerHTML = list_element_text;
     transfers.forEach(element => {
       if(countries.includes(element.country)){
@@ -216,17 +221,43 @@ function fill_popup(score, tiltEntry){
         image.alt = "Country = " + element.country;
         list_element.appendChild(image);
       }else{
-        list_element.innerHTML += " " + element.country +" "
+        list_element.innerHTML += "<span style=\"color:red;\"> " + element.country +" </span>"
       }
     });
+    try{
+    if(transfers.length==1 && (typeof transfers[0].country == null || transfers[0].country.length === 0)){
+      console.log("only one element in transfers ", transfers[0]);
+      list_element_text += "<span>Es liegen keine Informationen zu Drittstaatentransfers vor.</span>";
+      list_element.innerHTML = list_element_text;
+    }} catch (e){
+      if (e instanceof TypeError){
+        // it is fine
+      } else{
+        throw e;
+      }
+    }
     list.appendChild(list_element);
-  }
-  /*Data Disclosed */
+  
+  /*Data Disclosed*/
   list_element = document.createElement("li");
-  list_element.classList.add("tilt.data_disclosed");
-  list_element_text = "<b>Daten, die verarbeitet werden:</b> ";
-  //let transfers = tiltEntry.thirdCountryTransfers;
+  list_element.classList.add("tilt_data_disclosed");
+  list_element_text = "<b>Datenkategorien, die verarbeitet werden:</b> <ul id=\"data_disclosed\">";
+  let data_disclosed = tiltEntry.dataDisclosed;
+  console.log("Data Disclosed ", data_disclosed);
+  data_disclosed.forEach(element => {
+    if(element.category !== null){
+      if(element.category.length > 0){
+        list_element_text += "<li style=\"color:red;\"> " + element.category +"</li>";
+      }
+    }
+  });
+  if(list_element_text === "<b>Datenkategorien, die verarbeitet werden:</b> <ul>"){
+    list_element_text += "Es liegen keine Informationen über die verarbeiteten Datenkategorien vor";
+  }
+  list_element_text += "</ul>";
+  list_element.innerHTML = list_element_text;
   list.append(list_element);
+  
   /*Automated Decision Making */
   list_element = document.createElement("li");
   list_element.classList.add("tilt.decision_making");

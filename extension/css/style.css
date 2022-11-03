@@ -43,6 +43,12 @@
     list-style-position: outside;
 }
 
+#data_disclosed{
+    padding-left: 1em;
+    list-style-type: square;
+    list-style-position: outside;
+}
+
 .code-emoji-flag {
     height: 0.8em;
     margin-right: 0.25em;
