@@ -6,7 +6,8 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.google.com/*"
+                "*://*.google.com/*",
+                "*://*.google.de/*"
             ],
             "js": [
                 "content.js"
@@ -32,7 +33,7 @@
             ],
             "matches": [
                 "*://*.google.com/*",
-                "*://www.google.de/*"
+                "*://*.google.de/*"
             ],
             "extension_ids": [
                 "aefaghjpnilhnhifccckcbbiohfnknbm"
