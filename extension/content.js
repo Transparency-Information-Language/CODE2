@@ -158,7 +158,10 @@ async function printLabels(score, heading, tiltEntry) {
 
   console.log("this is the wrapper", wrapper);
   appendToG(heading.parentNode, wrapper);
-  document.getElementById("click_here").addEventListener("click", explainScore);
+  let explanations  = document.getElementsByClassName("click_here");
+  for(let i=0; i< explanations.length; i++) {
+    explanations[i].addEventListener("click", explainScore)
+  }
 }
 
 function appendToG(node, wrapper){
@@ -317,15 +320,16 @@ function fill_popup(score, tiltEntry){
 
   tilt_div.appendChild(list);
   popup.appendChild(tilt_div);  
-  popup.innerHTML += "<p> Die Labels werden auf Grund von einem Transparenzscore berechnet. Für diese Webseite beträgt der Score : "+score/0.6+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest klicke bitte <a id=\"click_here\">hier</a></p><p id=\"score_explanation\"></p>"; /*TODO Link mit Inhalt füllen bzw. Popup verlängern*/
+  popup.innerHTML += "<p> Die Labels werden auf Grund von einem Transparenzscore berechnet. Für diese Webseite beträgt der Score : "+score/0.6+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest klicke bitte <a class=\"click_here\">hier</a></p><p class=\"score_explanation\"></p>"; 
   //console.log("popup = ", popup);
   return popup;
 }
 
-function explainScore(){
-  var element = document.getElementById("score_explanation");
+function explainScore(event){
+  let element = event.target || event.srcElement;
+  element = element.parentNode.nextSibling;
   if(element.innerHTML ==""){
-    element.innerHTML = "Die Berechnung des Transparenzscores folgt zur Zeit sehr einfachen Regeln und auf Basis des TILT-Eintrags. <br />";
+    element.innerHTML = "Die Berechnung des Transparenzscores folgt zur Zeit sehr einfachen Regeln und wird auf Basis des TILT-Eintrags vorgenommen. <br />";
     element.innerHTML += "<p>Zunächst werden 5 Kategorien von Transparenzinformationen bewertet und für jede negative Bewertung erhöht sich der Score um 1. Die Kategorien der Transparenzinformationen und ihre negativen Eigenschaften werden im Folgenden aufgeführt:";
     element.innerHTML += "<ul><li>keine <b>e-Mail-Adresse des Verantwortlichen</b> angegeben ist</li><li><b>personenbezogene Daten</b> verarbeitet werden</li><li><b>Drittstaatentransfers</b> stattfinden</li><li>mindestens ein <b>Betroffenenrecht</b>  ist nicht verfügbar (z.B. wenn das Recht zur Datenauskunft nicht in der Datenschutzerklärung erwähnt wird)</li><li><b>automatisierte Enscheidungsfindung</b> genutzt wird</li></ul></p>";
     element.innerHTML += "<p>Daraufhin wird jeder Webseite eines der drei Label zugewiesen: <ul><li>eine Website erhält ein <b>grünes Label</b>, wenn maximal 1 Transparenzinformationen negativ bewertet wird </li><li>eine Website erhält ein <b>gelbes Label</b>, wenn 2 oder 3 Transparenzrechte negativ bewertet werden</li><li>eine Website erhält ein <b>rotes Label</b>, wenn 4 oder 5 Transparenzrechte negativ bewertet werden</li></ul></p>"; 
