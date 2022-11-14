@@ -13,7 +13,6 @@
     padding: 1em 2em;
     box-sizing: border-box;
     border-radius: 15px;
-    /*visibility: hidden;*/
     transition: 0.5s;
     transform: translateX(-50%) translateY(-50px);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
