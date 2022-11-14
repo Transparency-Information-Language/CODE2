@@ -2,7 +2,7 @@
     "name": "TILTension",
     "description": "A Chrome extension for TILT",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "content_scripts": [
         {
             "matches": [
@@ -12,7 +12,7 @@
             "js": [
                 "content.js"
             ],
-            "css":[
+            "css": [
                 "css/style.css"
             ]
         }
@@ -25,24 +25,13 @@
         "default_title": "TILTension"
     },
     "web_accessible_resources": [
-        {
-            "resources": [
-                "tiltdb.json",
-                "images/*.png",
-                "images/cristiroma_countries_data_flags_SVG/*.svg"
-            ],
-            "matches": [
-                "*://*.google.com/*",
-                "*://*.google.de/*"
-            ],
-            "extension_ids": [
-                "aefaghjpnilhnhifccckcbbiohfnknbm"
-            ]
-        }
+        "tiltdb.json",
+        "images/*.png",
+        "images/cristiroma_countries_data_flags_SVG/*.svg"
     ],
     "icons": {
-    "16": "images/green_icon_16.png",
-    "32": "/images/green_icon_32.png",
-    "128": "/images/green_icon_128.png"
-  }
+        "16": "images/green_icon_16.png",
+        "32": "/images/green_icon_32.png",
+        "128": "/images/green_icon_128.png"
+    }
 }

@@ -23,7 +23,7 @@ See the related publication here (in German): https://pub.h-brs.de/frontdoor/ind
 
 1. Open Chrome browser, navigate to `chrome://extensions/` and enable `Developer mode`
 2. Go to `Load unpacked` and select the `extension` directory
-3. You a ready to go: Google something and check out the labels 🟢🟡🔴
+3. You are ready to go: Google something and check out the labels 🟢🟡🔴
 
 ## Description
 Basically, there is one relevant file that takes over all the calculation and printing:

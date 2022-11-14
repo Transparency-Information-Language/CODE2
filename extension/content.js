@@ -1,11 +1,11 @@
-let tiltdb = chrome.runtime.getURL("tiltdb.json");
+let tiltdb = browser.runtime.getURL("tiltdb.json");
 let urlElements = document.getElementsByClassName("yuRUbf");
 
 const labels = [
-  chrome.runtime.getURL("images/not_found_16.png"),
-  chrome.runtime.getURL("images/green_icon_16.png"),
-  chrome.runtime.getURL("images/yellow_icon_16.png"),
-  chrome.runtime.getURL("images/red_icon_16.png"),
+  browser.runtime.getURL("images/not_found_16.png"),
+  browser.runtime.getURL("images/green_icon_16.png"),
+  browser.runtime.getURL("images/yellow_icon_16.png"),
+  browser.runtime.getURL("images/red_icon_16.png"),
 ];
 
 let tiltDoc = {
@@ -238,7 +238,7 @@ function fill_popup(score, tiltEntry){
         //popup.innerHTML += "<img src=\"images/cristiroma_countries_data_flags_SVG/"+element.country+".svg\" width=\"5px\" alt=\""+element.country+"\"></img>";
         var image = new Image();
         image.classList.add("code-emoji-flag");
-        image.src = chrome.runtime.getURL("images/cristiroma_countries_data_flags_SVG/"+element.country+".svg");
+        image.src = browser.runtime.getURL("images/cristiroma_countries_data_flags_SVG/"+element.country+".svg");
         image.alt = "Country = " + element.country;
         list_element.appendChild(image);
       }else{
