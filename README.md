@@ -32,10 +32,11 @@ In `main()` the labels from all websites which are in the `tiltHub database` are
 
 ### tilt score and labels
 There are nine major entries in a tilt document where each has an impact on the tilt score:
-- Right to `complain`, `withdraw consent`, `data portability`, `information`, `rectification or deletion`, and `automated decision making` are all binary options. So, if those rights are not forseen by the company (non existant or are `false`), the score encreases by a value of `0.3` each.
-- `Data Protection Officer`: If no contact email is provided here the score encreases by `0.3`. 
-- `Third country transfers`: If there are any third country transfers the score encreases by `0.3`.
-- `Data Disclosed`: Despite having a legal basis for disclosing data to third parties the fact that data may be disclosed encreases the score by `0.3`.
+- Right to `complain`, `withdraw consent`, `data portability`, `information`, `rectification or deletion` are all binary options. So, if those rights are not forseen by the company (non existant or are `false`), the score encreases by a value of `0.6`.
+- If `automated decision making` is in place, the score encreases by `0.6`.
+- `Data Protection Officer`: If no contact email is provided here the score encreases by `0.6`. 
+- `Third country transfers`: If there are any third country transfers the score encreases by `0.6`.
+- `Data Disclosed`: Despite having a legal basis for disclosing data to third parties the fact that data may be disclosed encreases the score by `0.6`.
 
 A search result can get a score between 1,0 and 3,0. In general, the higher the score the "worse". Higher score means there are several critical entries in the tilt document. A score = 0 means that there is no tiltHub entry for this website.
 
@@ -53,5 +54,3 @@ This is a little inspiration (with a lot of previous work by the CODE group) for
 
 ## Outlook
 Future work on this extension might include removing the database from the extension directory and replacing it with an API-Call. However, not every single search query should be sent to the backend for obvious privacy reasons. Instead, the API-Call should download the whole database to the local storage of the user and all search results have to be mapped to the database locally. Downloading the database should only happen if there are any changes or on a regular basis for example once per month.
-
-Regarding the "frontend" one might have a look into adding a stylesheet to the representation of the labels. Since, no other information have to be displayed, the label is being printed at the beginning of each result's heading. Similar to what CODE group made, one can think about editing this with a .css file, if more information shall be shown. Those could be short representations of the tilt entry or an explanation about the score. For example, one could show all nine tilthub entry categories to visualise, which information are responsible for the score. The exact score (sum of all nine categories) may be displayed below the whole list.
