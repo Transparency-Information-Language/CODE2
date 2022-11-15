@@ -295,7 +295,7 @@ function fill_popup(score, tiltEntry){
 
   tilt_div.appendChild(list);
   popup.appendChild(tilt_div);  
-  popup.innerHTML += "<p> Die Labels werden auf Grund von einem Transparenzscore berechnet. Für diese Webseite beträgt der Score : "+score/0.6+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest klicke bitte <a class=\"click_here\">hier</a></p><p class=\"score_explanation\"></p>"; 
+  popup.innerHTML += "<p>Die Labels werden auf Basis eines Transparenzscores dargestellt. Für diese Webseite beträgt der Score : "+score/0.6+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest, klicke bitte <a class=\"click_here\">hier</a>.</p><p class=\"score_explanation\"></p>"; 
   return popup;
 }
 
@@ -303,10 +303,10 @@ function explainScore(event){
   let element = event.target || event.srcElement;
   element = element.parentNode.nextSibling;
   if(element.innerHTML ==""){
-    element.innerHTML = "Die Berechnung des Transparenzscores folgt zur Zeit sehr einfachen Regeln und wird auf Basis des TILT-Eintrags vorgenommen. <br />";
-    element.innerHTML += "<p>Zunächst werden 5 Kategorien von Transparenzinformationen bewertet und für jede negative Bewertung erhöht sich der Score um 1. Die Kategorien der Transparenzinformationen und ihre negativen Eigenschaften werden im Folgenden aufgeführt:";
-    element.innerHTML += "<ul><li>keine <b>e-Mail-Adresse des Verantwortlichen</b> angegeben ist</li><li><b>personenbezogene Daten</b> verarbeitet werden</li><li><b>Drittstaatentransfers</b> stattfinden</li><li>mindestens ein <b>Betroffenenrecht</b>  ist nicht verfügbar (z.B. wenn das Recht zur Datenauskunft nicht in der Datenschutzerklärung erwähnt wird)</li><li><b>automatisierte Enscheidungsfindung</b> genutzt wird</li></ul></p>";
-    element.innerHTML += "<p>Daraufhin wird jeder Webseite eines der drei Label zugewiesen: <ul><li>eine Website erhält ein <b>grünes Label</b>, wenn maximal 1 Transparenzinformationen negativ bewertet wird </li><li>eine Website erhält ein <b>gelbes Label</b>, wenn 2 oder 3 Transparenzrechte negativ bewertet werden</li><li>eine Website erhält ein <b>rotes Label</b>, wenn 4 oder 5 Transparenzrechte negativ bewertet werden</li></ul></p>"; 
+    element.innerHTML = "Die Berechnung des Transparenzscores folgt sehr einfachen Regeln und auf Basis des TILT-Eintrags des Dienstes (der TILT-Eintrag enthält die Datenschutzerklärung in maschinenlesbarer Form). <br />";
+    element.innerHTML += "<p>Zunächst wird der Dienst anhand von fünf Kategorien von Transparenzinformationen bewertet. Für jede negative Bewertung erhöht sich der Score des Dienstes um einen Punkt. Folgende Kriterien führen zu je einem Punkt:";
+    element.innerHTML += "<ul><li>Es wird keine <b>e-Mail-Adresse einer verantwortlichen Person</b> angegeben.</li><li>Es werden <b>personenbezogene Daten</b> verarbeitet.</li><li>Es finden <b>Drittstaatentransfers</b> statt.</li><li>Mindestens ein <b>Betroffenenrecht</b>  (z.B.das Recht auf Datenauskunft) ist nicht verfügbar bzw. wird nicht in der Datenschutzerklärung erwähnt.</li><li>Es wird <b>automatisierte Enscheidungsfindung</b> genutzt.</li></ul></p>";
+    element.innerHTML += "<p>Nach Berechnung des Scores wird den Diensten eines der drei Label zugewiesen: <ul><li><b>Grünes Label</b> bei null oder einem Punkt </li><li><b>Gelbes Label</b> bei zwei bis drei Punkten </li><li><b>Rotes Label</b> bei vier bis fünf Punkten </li></ul></p>"; 
   }else{
     element.innerHTML = "";
   }
