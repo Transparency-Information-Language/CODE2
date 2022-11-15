@@ -33,7 +33,6 @@ async function getDomain(url) {
 
 async function getScore(tiltHubEntry) {
   let score = 0;
-  //console.log("computing score for ", tiltHubEntry.meta.name, " initial score is ", score);
 
   /* fill right tos */
   tiltDoc["Right to Complain"] = tiltHubEntry["rightToComplain"]["available"];
@@ -51,7 +50,6 @@ async function getScore(tiltHubEntry) {
   let counter = 0;
   Object.values(tiltDoc).forEach((value) => {
     if (!value) {
-      //console.log("Missing right to: ", counter);
       rights = true;
     }
     counter++;
@@ -59,37 +57,28 @@ async function getScore(tiltHubEntry) {
     
   /* set score */
   if(rights){
-    //console.log(" increased score due to missing right to");
     score += 0.6;
   }
   if(tiltHubEntry["automatedDecisionMaking"]["available"]){
-    //console.log(" increased score due to automated descisionmaking ", tiltHubEntry["automatedDecisionMaking"]["available"]);
     score +=0.6;
   }
   if ((tiltHubEntry["dataProtectionOfficer"]["email"] == null)) {
-    //console.log(" increased score due to missing mail");
     score += 0.6;
   }
   if (tiltHubEntry["thirdCountryTransfers"].length > 1) {
-    //console.log(" increased score due to length of countries >1");
     score += 0.6;
   }else if((tiltHubEntry["thirdCountryTransfers"].length == 1 )&& (tiltHubEntry["thirdCountryTransfers"][0].country !== null)){
     if(tiltHubEntry["thirdCountryTransfers"][0].country.length > 0){
-      //console.log(" increased score due to countries include one real country");
       score += 0.6;
     }
   }
   if (tiltHubEntry["dataDisclosed"].length > 1) {
-    //console.log(" increased score due to length of data disclosed >1");
     score += 0.6;
   }else if((tiltHubEntry["dataDisclosed"].length == 1 )&& (tiltHubEntry["dataDisclosed"][0].category !== null)){
     if(tiltHubEntry["dataDisclosed"][0].category.length > 0){
-      //console.log(" increased score due to  data disclosed one real item");
       score += 0.6;
     }
   }
-
-  //console.log(" final score is ", score);
   return score;
 }
 
@@ -114,7 +103,6 @@ async function getAllTilts(){
         });
       });
     });
-    console.log("TiltEntries are: ", tiltEntries);
     return tiltEntries;
 }
 
@@ -156,10 +144,13 @@ async function printLabels(score, heading, tiltEntry) {
     wrapper.appendChild(fill_popup(score, tiltEntry));
   }
 
-  console.log("this is the wrapper", wrapper);
   appendToG(heading.parentNode, wrapper);
-  document.getElementById("click_here").addEventListener("click", explainScore);
+  let explanations  = document.getElementsByClassName("click_here");
+  for(let i=0; i< explanations.length; i++) {
+    explanations[i].addEventListener("click", explainScore)
+  }
 }
+
 
 function appendToG(node, wrapper){
   if(node.classList.contains("g")){
@@ -170,8 +161,6 @@ function appendToG(node, wrapper){
 }
 
 function fill_popup(score, tiltEntry){
-  //console.log("in popup tilt enty ", tiltEntry, " with score ", score, " restarting computation of score....");
-
   var popup = document.createElement("div");
   popup.classList.add("popup");
   popup.innerHTML = "<h2>TILT Informationen zu <i>"+tiltEntry.meta.name+"</i></h2>";
@@ -203,7 +192,6 @@ function fill_popup(score, tiltEntry){
   list_element.classList.add("tilt_data_disclosed");
   list_element_text = "<b>Datenkategorien, die verarbeitet werden:</b> <ul class=\"tilt_entry_list\">";
   let data_disclosed = tiltEntry.dataDisclosed;
-  //console.log("Data Disclosed ", data_disclosed);
   data_disclosed.forEach(element => {
     if(element.category !== null){
       if(element.category.length > 0){
@@ -231,11 +219,6 @@ function fill_popup(score, tiltEntry){
     list_element.innerHTML = list_element_text;
     transfers.forEach(element => {
       if(countries.includes(element.country)){
-        /*
-        for unicode emojis
-        popup.innerHTML = countries[element.country];
-        */
-        //popup.innerHTML += "<img src=\"images/cristiroma_countries_data_flags_SVG/"+element.country+".svg\" width=\"5px\" alt=\""+element.country+"\"></img>";
         var image = new Image();
         image.classList.add("code-emoji-flag");
         image.src = browser.runtime.getURL("images/cristiroma_countries_data_flags_SVG/"+element.country+".svg");
@@ -247,7 +230,6 @@ function fill_popup(score, tiltEntry){
     });
     try{
     if(transfers.length==1 && (typeof transfers[0].country == null || transfers[0].country.length === 0)){
-      //console.log("only one element in transfers ", transfers[0]);
       list_element_text += "<span>Es liegen keine Informationen zu Drittstaatentransfers vor.</span>";
       list_element.innerHTML = list_element_text;
     }} catch (e){
@@ -307,7 +289,6 @@ function fill_popup(score, tiltEntry){
   list_element.classList.add("tilt.decision_making");
   list_element_text = "<b>Automatisierte Entscheidungsfindung:</b> ";
   if(tiltEntry.automatedDecisionMaking.inUse){
-    //console.log("automated decisionmaking: ", tiltEntry.automatedDecisionMaking.inUse);
     list_element_text += "<span style=\"color:red;\">wird genutzt</span>";
   }else{
     list_element_text += "<span>wird nicht genutzt</span>";
@@ -317,18 +298,18 @@ function fill_popup(score, tiltEntry){
 
   tilt_div.appendChild(list);
   popup.appendChild(tilt_div);  
-  popup.innerHTML += "<p> Die Labels werden auf Grund von einem Transparenzscore berechnet. Für diese Webseite beträgt der Score : "+score/0.6+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest klicke bitte <a id=\"click_here\">hier</a></p><p id=\"score_explanation\"></p>"; /*TODO Link mit Inhalt füllen bzw. Popup verlängern*/
-  //console.log("popup = ", popup);
+  popup.innerHTML += "<p>Die Labels werden auf Basis eines Transparenzscores dargestellt. Für diese Webseite beträgt der Score : "+score/0.6+".\n Wenn du mehr zu der Berechnung des Scores erfahren möchtest, klicke bitte <a class=\"click_here\">hier</a>.</p><p class=\"score_explanation\"></p>"; 
   return popup;
 }
 
-function explainScore(){
-  var element = document.getElementById("score_explanation");
+function explainScore(event){
+  let element = event.target || event.srcElement;
+  element = element.parentNode.nextSibling;
   if(element.innerHTML ==""){
-    element.innerHTML = "Die Berechnung des Transparenzscores folgt zur Zeit sehr einfachen Regeln und auf Basis des TILT-Eintrags. <br />";
-    element.innerHTML += "<p>Zunächst werden 5 Kategorien von Transparenzinformationen bewertet und für jede negative Bewertung erhöht sich der Score um 1. Die Kategorien der Transparenzinformationen und ihre negativen Eigenschaften werden im Folgenden aufgeführt:";
-    element.innerHTML += "<ul><li>keine <b>e-Mail-Adresse des Verantwortlichen</b> angegeben ist</li><li><b>personenbezogene Daten</b> verarbeitet werden</li><li><b>Drittstaatentransfers</b> stattfinden</li><li>mindestens ein <b>Betroffenenrecht</b>  ist nicht verfügbar (z.B. wenn das Recht zur Datenauskunft nicht in der Datenschutzerklärung erwähnt wird)</li><li><b>automatisierte Enscheidungsfindung</b> genutzt wird</li></ul></p>";
-    element.innerHTML += "<p>Daraufhin wird jeder Webseite eines der drei Label zugewiesen: <ul><li>eine Website erhält ein <b>grünes Label</b>, wenn maximal 1 Transparenzinformationen negativ bewertet wird </li><li>eine Website erhält ein <b>gelbes Label</b>, wenn 2 oder 3 Transparenzrechte negativ bewertet werden</li><li>eine Website erhält ein <b>rotes Label</b>, wenn 4 oder 5 Transparenzrechte negativ bewertet werden</li></ul></p>"; 
+    element.innerHTML = "Die Berechnung des Transparenzscores folgt sehr einfachen Regeln und auf Basis des TILT-Eintrags des Dienstes (der TILT-Eintrag enthält die Datenschutzerklärung in maschinenlesbarer Form). <br />";
+    element.innerHTML += "<p>Zunächst wird der Dienst anhand von fünf Kategorien von Transparenzinformationen bewertet. Für jede negative Bewertung erhöht sich der Score des Dienstes um einen Punkt. Folgende Kriterien führen zu je einem Punkt:";
+    element.innerHTML += "<ul><li>Es wird keine <b>e-Mail-Adresse einer verantwortlichen Person</b> angegeben.</li><li>Es werden <b>personenbezogene Daten</b> verarbeitet.</li><li>Es finden <b>Drittstaatentransfers</b> statt.</li><li>Mindestens ein <b>Betroffenenrecht</b>  (z.B.das Recht auf Datenauskunft) ist nicht verfügbar bzw. wird nicht in der Datenschutzerklärung erwähnt.</li><li>Es wird <b>automatisierte Enscheidungsfindung</b> genutzt.</li></ul></p>";
+    element.innerHTML += "<p>Nach Berechnung des Scores wird den Diensten eines der drei Label zugewiesen: <ul><li><b>Grünes Label</b> bei null oder einem Punkt </li><li><b>Gelbes Label</b> bei zwei bis drei Punkten </li><li><b>Rotes Label</b> bei vier bis fünf Punkten </li></ul></p>"; 
   }else{
     element.innerHTML = "";
   }
@@ -347,7 +328,6 @@ async function main() {
   for (let e of urlElements) {
     let url = JSON.stringify(e.children[0].href).replace("https://", "");
     let domain = await getDomain(url);
-    console.log("inspecting domain ", domain);
     if(domain === "wikipedia.de" || domain === "wikipedia.org"){
       domain = "wikimedia.org";
     }
