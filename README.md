@@ -1,6 +1,8 @@
-# TILTension
+# CODE2
 
-### A TILT extension for Google Chrome.
+_Proof of concept implementation_
+
+### A TILT extension for Chrome and Firefox
 
 Extension for the Chrome browser which allow users to see wether there is a [TILT](https://github.com/Transparency-Information-Language/meta) representation of the transparency information, before even visiting the webpage - directly on your Google Search page.
 
