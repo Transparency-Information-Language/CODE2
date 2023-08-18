@@ -1,5 +1,6 @@
 let tiltdb = chrome.runtime.getURL("tiltdb.json");
-let urlElements = document.getElementsByClassName("yuRUbf");
+let urlElements = document.getElementsByClassName("byrV5b");
+
 
 const labels = [
   chrome.runtime.getURL("images/not_found_16.png"),
@@ -317,27 +318,72 @@ async function main() {
   let tiltAllScores = await getAllTiltScores(tiltEntries);
   let results = {};
   let index = 0;
+  const headings = document.getElementsByClassName("LC20lb MBeuO DKV0Md");/*(document.getElementsByClassName("yuRUbf")).getElementsByClassName("LC20lb MBeuO DKV0Md");*/
 
+  let green = Object.keys(tiltAllScores).filter(key => tiltAllScores[key] <=1 ).reduce( (res, key) => (res[key] = tiltAllScores[key], res), {} );
+  let yellow = Object.keys(tiltAllScores).filter(key => tiltAllScores[key] >1 && tiltAllScores[key] <2).reduce( (res, key) => (res[key] = tiltAllScores[key], res), {} );
+  let red = Object.keys(tiltAllScores).filter(key => tiltAllScores[key] >=2 ).reduce( (res, key) => (res[key] = tiltAllScores[key], res), {} );
+
+  /* Debugging 
+  console.log("TiltEntries ", tiltEntries);
+  console.log("Tilt Scores", tiltAllScores, " size ", Object.keys(tiltAllScores).length);
+  console.log("green: ", green, " size ", Object.keys(green).length);
+  console.log("yellow: ", yellow, " size ", Object.keys(yellow).length);
+  console.log("red: ", red, " size ", Object.keys(red).length);
+  console.log("headings: ", headings);
+   */
+  console.log("headings: ", headings);
   var meta = document.createElement('meta');  
   meta.charset = "UTF-16";
   document.getElementsByTagName('head')[0].appendChild(meta);
   
   for (let e of urlElements) {
-    let url = JSON.stringify(e.children[0].href).replace("https://", "");
+    console.log("index ", index);
+    let url = JSON.stringify(e.children[0].textContent)
+    if(url.startsWith("https://") || url.startsWith("\"https://")){
+      url = url.replace("https://", "");
+    }else{
+      index--;
+      continue;
+    }
+    if(url.includes("›")){
+      url = url.split(" › ")[0];
+    }
+    console.log("URL for fetching tilt = ", url);
     let domain = await getDomain(url);
-    if(domain === "wikipedia.de" || domain === "wikipedia.org"){
+    let href = headings[index].parentElement.href;
+      if(!href.includes(domain.split(".")[0])){
+        console.log("something is weird: link ", href , " with domain ", domain, "and split ", domain.split(".")[0]);
+        let i = index+1;
+        for(i;i<headings.length;i++){
+          href = headings[i].outerText.toLowerCase();
+          if(href.includes(domain.split(".")[0])){
+            console.log("found new index for domain ", domain);
+            index =i;
+          }
+        }
+      }
+
+
+
+    if(domain.includes("google")){
+      /* could be replaced with google.de? */
+      domain = "google.com";
+      /*console.log("changed domain to google!")*/
+    }
+    if(domain === "wikipedia.de" || domain === "wiktionary.org" || domain === "wikipedia.org" ){
       domain = "wikimedia.org";
+      /*console.log("changed domain to wikimedia!")*/
     }
     results[domain] = 0;
 
-
-    Object.keys(tiltAllScores).forEach(async (key) => {
-      if (key == domain) {
-        results[domain] = tiltAllScores[key];
-      }
-    });
-    const headings = document.getElementsByClassName("LC20lb MBeuO DKV0Md");
+          Object.keys(tiltAllScores).forEach(async (key) => {
+        if (key == domain) {
+          results[domain] = tiltAllScores[key];
+        }
+      });
     await printLabels(results[domain], headings[index], tiltEntries[domain]);
+      console.log("domain ", domain, " not in tiltEnteries" );
     index++;
   }
 }

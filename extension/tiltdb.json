@@ -1,5 +1,2758 @@
 [
   {
+    "meta": {
+      "version": 1,
+      "language": "de",
+      "status": "active",
+      "_id": "0b2a232e-85a1-413c-8339-d19c7648deab",
+      "name": "Bundesministerium der Justiz und für Verbraucherschutz",
+      "created": "2023-07-24T12:00:00+0000",
+      "modified": "2023-07-24T12:00:00+0000",
+      "url": "https://www.bmuv.de/datenschutz",
+      "_hash": ""
+    },
+    "controller": {
+      "country": "DE",
+      "representative": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "name": "Bundesministerium für Umwelt, Naturschutz, nukleare Sicherheit und Verbraucherschutz",
+      "address": "Stresemannstraße 128 - 130, 10117 Berlin"
+    },
+    "dataProtectionOfficer": {
+      "name": "Beauftragte für den Datenschutz im BMUV",
+      "address": "Stresemannstraße 128 - 130, 10117 Berlin",
+      "country": "DE",
+      "phone": "+4930183050",
+      "other": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen"
+    },
+    "dataDisclosed": [
+      {
+        "_id": "7f7cc950-86ae-4264-b424-6826d6ce425d",
+        "category": "Besuch der Internetseite (Serverlogs)",
+        "subcategories": ["Name der abgerufenen Datei","Datum und Uhrzeit des Abrufs","übertragene Datenmenge","Meldung, ob der Abruf erfolgreich war","IP-Adresse des Benutzers beziehungsweise des Anbieters","Internetadresse der vorhergehenden Seite (Referrer)","Angaben zum Programm, das die Daten abruft (User-Agent)"],
+        "storage": [
+          {
+              "temporal": {
+                  "description": "Dabei werden für maximal 24 Stunden folgende Daten gespeichert",
+                  "ttl":"24h"
+              },
+              "aggregationFunction":"max"
+          }
+        ],
+        "purposes": [
+          {
+            "purpose": "Datensicherheit",
+            "description":"Jeder Besuch auf unserer Internetseite wird in einer Protokolldatei erfasst, um die Datensicherheit zu gewährleisten."
+          }
+        ],
+        "legalBases": [
+          {
+              "reference":"GDPR-6-1-c",
+              "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern wir aufgrund einer Rechtsvorschrift dazu verpflichtet sind (laut Artikel 6 Absatz 1 Buchstabe c) der DSGVO) "
+          },
+          {
+              "reference":"GDPR-6-1-e",
+              "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern die Verarbeitung zur Wahrnehmung einer Aufgabe des Ministeriums erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt (laut Artikel 6 Absatz 1 Buchstabe e) der DSGVO in Verbindung mit Paragraf 3 des Bundesdatenschutzgesetzes)"
+          }
+        ],
+        "legitimateInterests": [],
+        "recipients": [],
+        "nonDisclosure": {
+          "legalRequirement": null,
+          "contractualRegulation": null,
+          "obligationToProvide": null,
+          "consequences": ""
+        }
+      },
+      {
+        "_id": "10763001-d12d-4566-b2d1-ef1c0bae310a",
+        "category": "personenbezogenen Daten",
+        "subcategories": ["E-Mail-Adresse","Name","Anschrift"],
+        "storage": [
+          {
+              "temporal": {
+                  "description": "Ist ein solches Informationsangebot abschlossen, durch uns beendet oder durch Sie abbestellt, werden die personenbezogenen Daten nach maximal sechs Wochen unwiderruflich gelöscht. ",
+                  "ttl":"P6W"
+              },
+              "purposeConditional":["Ist eine Speicherung Ihrer persönlichen Daten für den in Anspruch genommenen Informationsdienst notwendig, werden Ihre Daten nur solange gespeichert, wie es zur Erfüllung des Angebotes bzw. der Aufgaben des Ministeriums, für die die Daten erhoben wurden, erforderlich ist. "],
+              "aggregationFunction":"max"
+          }
+        ],
+        "purposes": [
+          {
+            "purpose": "Informationsangebote",
+            "description":"Innerhalb der Internetseite besteht für einige Informationsangebote die Möglichkeit zur Eingabe personenbezogener Daten. Wenn Sie zum Beispiel unseren Newsletter oder andere Mailingdienste bestellen, müssen Sie Ihre E-Mail-Adresse angeben. Melden Sie sich bei einer Veranstaltung an oder bestellen Sie Informationsmaterial, benötigen wir auch Ihren Namen und ihre Anschrift."
+          }
+        ],
+        "legalBases": [
+          {
+            "reference": "GDPR-6-1-a",
+            "description": "Sofern wir auf dieser Seite personenbezogene Daten von Ihnen erheben, erfolgt dies ausschließlich mit Ihrer jederzeit widerruflichen Einwilligung (zum Beispiel beim Newsletter-Versand nach Artikel 6 Absatz 1 Buchstabe a) der DSGVO) oder zur Durchführung eines Bestellvorgangs (zum Beispiel bei Publikationen nach Artikel 6 Absatz 1 Buchstabe b) der DSGVO). "
+          },
+          {
+              "reference": "GDPR-6-1-b",
+              "description":"Sofern wir auf dieser Seite personenbezogene Daten von Ihnen erheben, erfolgt dies ausschließlich mit Ihrer jederzeit widerruflichen Einwilligung (zum Beispiel beim Newsletter-Versand nach Artikel 6 Absatz 1 Buchstabe a) der DSGVO) oder zur Durchführung eines Bestellvorgangs (zum Beispiel bei Publikationen nach Artikel 6 Absatz 1 Buchstabe b) der DSGVO). "
+          },
+          {
+              "reference":"GDPR-6-1-c",
+              "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern wir aufgrund einer Rechtsvorschrift dazu verpflichtet sind (laut Artikel 6 Absatz 1 Buchstabe c) der DSGVO) "
+          },
+          {
+              "reference":"GDPR-6-1-e",
+              "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern die Verarbeitung zur Wahrnehmung einer Aufgabe des Ministeriums erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt (laut Artikel 6 Absatz 1 Buchstabe e) der DSGVO in Verbindung mit Paragraf 3 des Bundesdatenschutzgesetzes)"
+          }
+        ],
+        "legitimateInterests": [],
+        "recipients": [
+          {
+              "name":"familie redlich digital GmbH",
+              "country":"DE",
+              "category":"Hauptdienstleister"
+          }
+        ],
+        "nonDisclosure": {
+          "legalRequirement": false,
+          "contractualRegulation": false,
+          "obligationToProvide": false,
+          "consequences": ""
+        }
+      },
+      {
+          "_id": "c8893a63-9245-42fd-bfb3-f951a0b652cb",
+          "category": "Kommunikation",
+          "subcategories": ["Nachrichten","E-Mail-Adresse", "Browserversion", "Betriebssystem"],
+          "storage": [
+            {
+                "temporal": {
+                    "description": "Wenn Sie E-Mails aus Formularen versenden, speichert das System zusätzlich zu den eingegebenen Daten Informationen zur Browserversion und dem genutzten Betriebssystem. Es werden dabei keine IP Adressen gespeichert. Diese Daten werden nicht verarbeitet, sie dienen lediglich dazu, Fehler in Einzelfällen zu beheben.",
+                    "ttl":"P28D"
+                },
+                "purposeConditional":[],
+                "aggregationFunction":"max"
+            }
+          ],
+          "purposes": [
+            {
+              "purpose": "Korrespondenz",
+              "description":"Wenn Sie uns eine Nachricht über unser Kontaktformular oder direkt per E-Mail senden, so werden die von Ihnen angegebenen Daten für die Korrespondenz mit Ihnen verwendet. "
+            }
+          ],
+          "legalBases": [
+              {
+                  "reference":"GDPR-6-1-c",
+                  "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern wir aufgrund einer Rechtsvorschrift dazu verpflichtet sind (laut Artikel 6 Absatz 1 Buchstabe c) der DSGVO) "
+              },
+              {
+                  "reference":"GDPR-6-1-e",
+                  "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern die Verarbeitung zur Wahrnehmung einer Aufgabe des Ministeriums erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt (laut Artikel 6 Absatz 1 Buchstabe e) der DSGVO in Verbindung mit Paragraf 3 des Bundesdatenschutzgesetzes)"
+              }
+          ],
+          "legitimateInterests": [],
+          "recipients": [],
+          "nonDisclosure": {
+            "legalRequirement": null,
+            "contractualRegulation": null,
+            "obligationToProvide": null,
+            "consequences": ""
+          }
+        },
+        {
+          "_id": "f16b2d50-9529-438a-93f5-08dd3993dd2e",
+          "category": "Fotoaufnahmen",
+          "storage": [
+            {
+                "temporal": {
+                    "description": "",
+                    "ttl":""
+                },
+                "purposeConditional":[],
+                "aggregationFunction":"max"
+            }
+          ],
+          "purposes": [
+            {
+              "purpose": "Presse- und Öffentlichkeitsarbeit",
+              "description":"Im Rahmen unserer Presse- und Öffentlichkeitsarbeit werden bei Veranstaltungen und Terminen Fotos aufgenommen, auf denen Sie gegebenenfalls erkennbar zu sehen sind. "
+            }
+          ],
+          "legalBases": [
+              {
+                  "reference":"GDPR-6-1-c",
+                  "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern wir aufgrund einer Rechtsvorschrift dazu verpflichtet sind (laut Artikel 6 Absatz 1 Buchstabe c) der DSGVO) "
+              },
+              {
+                  "reference":"GDPR-6-1-e",
+                  "description":"Im Übrigen verarbeiten wir personenbezogene Daten nur sofern die Verarbeitung zur Wahrnehmung einer Aufgabe des Ministeriums erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt (laut Artikel 6 Absatz 1 Buchstabe e) der DSGVO in Verbindung mit Paragraf 3 des Bundesdatenschutzgesetzes)"
+              }
+          ],
+          "legitimateInterests": [],
+          "recipients": [],
+          "nonDisclosure": {
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false,
+            "consequences": "Der Aufnahme und/oder einer Veröffentlichung können Sie widersprechen. Bitte nutzen Sie für Ihren Widerspruch die oben genannten Kontaktdaten."
+          }
+        }
+    ],
+    "thirdCountryTransfers": [],
+    "sources": [],
+    "changesOfPurpose": [],
+    "accessAndDataPortability": {
+      "available": true,
+      "administrativeFee": {
+        "amount": 0,
+        "currency": "EUR"
+      },
+      "dataFormats": [],
+      "description": "Mit dem Recht auf Auskunft erhalten Sie eine umfassende Einsicht in die Sie betreffenden Daten und einige andere wichtige Kriterien wie beispielsweise die Verarbeitungszwecke oder die Dauer der Speicherung. Es gelten die in Paragraf 34 BDSG geregelten Ausnahmen von diesem Recht. ",
+      "url": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen",
+      "email": ""
+    },
+    "rightToInformation": {
+      "available": true,
+      "description": "",
+      "url": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen",
+      "email": ""
+    },
+    "rightToRectificationOrDeletion": {
+      "available": true,
+      "url": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen",
+      "email": "",
+      "description": "Das Recht auf Berichtigung beinhaltet die Möglichkeit für Sie, unrichtige Sie betreffende personenbezogene Daten ändern zu lassen. Das Recht auf Löschung beinhaltet die Möglichkeit für Sie Daten löschen zu lassen. Dies ist allerdings nur dann möglich, wenn die Sie betreffenden personenbezogenen Daten nicht mehr notwendig sind, rechtswidrig verarbeitet werden oder eine diesbezügliche Einwilligung widerrufen wurde. Es gelten die in Paragraf 35 BDSG geregelten Ausnahmen von diesem Recht."
+    },
+    "rightToDataPortability": {
+      "available": true,
+      "url": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen",
+      "email": "",
+      "description": "Das Recht auf Datenübertragbarkeit beinhaltet die Möglichkeit für den Betroffenen, die ihn angehenden personenbezogenen Daten in einem gängigen, maschinenlesbaren Format vom Verantwortlichen zu erhalten, um sie ggf. an einen anderen Verantwortlichen weiterleiten zu lassen. Gemäß Artikel 20 Abs. 3 Satz 2 DS-GVO steht dieses Recht aber dann nicht zur Verfügung, wenn die Datenverarbeitung der Wahrnehmung öffentlicher Aufgaben dient. Dies ist beim BMJV nur dann nicht der Fall, wenn die Verarbeitung personenbezogener Daten zu fiskalischen Zwecken erfolgt."
+    },
+    "rightToWithdrawConsent": {
+      "available": true,
+      "url": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen",
+      "email": "",
+      "description": "Sie haben jederzeit das Recht, eine erteilte Einwilligung mit Wirkung für die Zukunft zu widerrufen. Eine entsprechende Widerrufsmöglichkeit finden Sie jeweils bei dem entsprechenden Internetangebot für den Ihre Einwilligung eingeholt wurde."
+    },
+    "rightToComplain": {
+      "available": true,
+      "supervisoryAuthority": {
+        "name": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
+        "address": "Husarenstraße 30, 53117 Bonn",
+        "country": "DE",
+        "email": "poststelle@bfdi.bund.de",
+        "phone": "+492289977990"
+      },
+      "url": "https://www.bmuv.de/service/buergerservice/kontaktformular-fuer-ihre-fragen",
+      "email": "",
+      "description": ""
+    },
+    "automatedDecisionMaking": {
+      "inUse": false
+    }
+  },
+  {
+    "meta": {
+      "_id": "c117fb54-d16e-450d-9559-5ff02b26f70c",
+      "name": "focus",
+      "created": "2023-08-16T12:21:52.177154",
+      "modified": "2023-08-16T12:21:52.177179",
+      "version": 1,
+      "language": "de",
+      "status": "active",
+      "url": "https://www.focus.de/intern/datenschutzerklaerung-datenschutzerklaerung-fuer-die-webseite-www-focus-de_id_6846331.html",
+      "_hash": null
+    },
+    "controller": {
+      "name": "BurdaForward GmbH",
+      "country": "DE",
+      "address": "BurdaForward GmbH, St.-Martin-Straße 66, 81541 München",
+      "division": null,
+      "representative": {
+        "name": null,
+        "email": "info@faz.net",
+        "phone": null
+      }
+    },
+    "dataProtectionOfficer": {
+      "email": "focusonline@datenschutzanfrage.de",
+      "url":"https://datenschutzanfrage.de/?source=focusonline",
+      "phone": "+49 89 9250 4500",
+      "country": "DE",
+      "name": null,
+      "address": "BurdaForward GmbH, Abteilung Datenschutz, St.-Martin-Straße 66, 81541 München"
+    },
+    "dataDisclosed": [
+       {
+        "_id": "60a76318-f061-4c2c-a8cb-e5eb526e5670",
+        "category": "Accountdaten",
+        "purposes": [
+          {
+              "purpose":"Bereitstellung des geschützten Login-Bereichs",
+              "description":"Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zum Zweck der Bereitstellung des geschützten Login-Bereichs sowie zum Zweck der Anmeldung, Organisation und Abwicklung Ihrer jeweiligen Anmeldung. "
+          },
+          {
+              "purpose":"Teilnahme im Rahmen der FOCUS Online Community",
+              "description":"Identifizierung; Kontaktaufnahme; Prüfung der Zugangsberechtigung "
+          },
+          {
+            "purpose": "Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst d) DSGVO",
+            "description": "Die Datenerhebungen erfolgen zum Zweck der Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst. d) DSGVO"
+          },
+          {
+              "purpose":"Vertragsdurchführung",
+              "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+          },
+          {
+              "purpose":"Rechtsdurchsetzung und Inkasso",
+              "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+          },
+          {
+              "purpose":"interessengerechten Direktwerbung ",
+              "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+          }
+        ],
+        "legalBases": [
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+            },
+            {
+              "reference": "DSGVO-6-1-a",
+              "description": "Art. 6 Abs. 1 Satz 1 Buchstabe a DSGVO: Soweit Sie sich zur Authentifizierung mittels „Social Login“ entscheiden, erfolgt die Übermittlung ihrer personenbezogenen Daten zwischen dem jeweiligen sozialen Netzwerk und uns auf Grundlage ihrer Einwilligung"
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": false,
+            "reasoning":null
+          }
+        ],
+        "recipients": [
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Hostingdienstleister"
+          },
+          {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "staatliche Behörden"
+            },
+            {
+              "name": "Meta Platforms Ireland Limited",
+              "country": "IE",
+              "division": null,
+              "address": " Meta Platforms Ireland Limited, Hanover Reach, 5-7 Hanover Quay, Dublin 2, Ireland",
+              "representative": null,
+              "category": "Social Media"
+            },
+            {
+              "name": "Apple Inc.",
+              "country": "US",
+              "division": null,
+              "address": "Apple Inc., Infinite Loop, Cupertino, CA 95014, USA",
+              "representative": null,
+              "category": null
+            },
+            {
+              "name": "Google Ireland Ltd",
+              "country": "US",
+              "division": null,
+              "address": "Google Ireland Ltd, Gordon House, Barrow Street, Dublin 4, Ireland",
+              "representative": null,
+              "category": null
+            }
+        ],
+        "storage": [
+          {
+            "purposeConditional":"Personenbezogene Daten werden gelöscht, sobald deren weitergehende Verarbeitung nicht mehr für die jeweilige Zweckerreichung erforderlich ist und gesetzliche Aufbewahrungsfristen einer Löschung nicht entgegenstehen. Dies ist regelmäßig mit Löschung Ihres Nutzerkontos der Fall. ",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Dauer der Registrierung",
+              "aggregationFunction":"max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+          "legalRequirement": false,
+          "contractualRegulation": false,
+          "obligationToProvide": false
+        }
+      },
+      {
+          "_id": "bf95fa77-44a5-45a5-a0d3-6ca3d843f1b9",
+          "category": "Bestelldaten",
+          "purposes": [
+            {
+                "purpose":"Online-Shopping im FOCUS-Online PDF-Shop",
+                "description":"Bestellabwicklung; interessengerechte Angebote "
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            },
+            {
+                "purpose":"interessengerechten Direktwerbung ",
+                "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+              },
+              {
+                "reference": "DSGVO-6-1-f",
+                "description": "Werbezwecke; Pflege der Kundenbeziehung; Vermarktung unserer Services"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": true,
+              "reasoning":"Werbezwecke; Pflege der Kundenbeziehung; Vermarktung unserer Services"
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"10 Jahre nach Abwicklung der letzten Bestellung ",
+              "aggregationFunction": "max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+        {
+          "_id": "0a41c47f-c105-4a39-9206-a4cfbb425d7f",
+          "category": "Zahlungsdaten",
+          "purposes": [
+            {
+                "purpose":"Online-Shopping im FOCUS-Online PDF-Shop",
+                "description":"Abwicklung von Zahlungen für den Service"
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": false,
+              "reasoning":null
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              },
+              {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "Zahlungsdienstleister"
+                }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"10 Jahre nach Abwicklung der letzten Bestellung ",
+              "aggregationFunction": "max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+      {
+          "_id": "e4c66524-17ff-4574-bf4c-120e5214a058",
+          "category": "Kontaktdaten",
+          "purposes": [
+            {
+                "purpose":"Bereitstellung des geschützten Login-Bereichs",
+                "description":"Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zum Zweck der Bereitstellung des geschützten Login-Bereichs sowie zum Zweck der Anmeldung, Organisation und Abwicklung Ihrer jeweiligen Anmeldung. "
+            },
+            {
+              "purpose": "Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst d) DSGVO",
+              "description": "Die Datenerhebungen erfolgen zum Zweck der Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst. d) DSGVO"
+            },
+            {
+              "purpose":"Gewinnspiele und Aktionen",
+              "description":"Kontaktaufnahme"
+            },
+            {
+              "purpose":"Online-Shopping im FOCUS-Online PDF-Shop",
+              "description":"Identifizierung; Kontaktaufnahme; Registrierung als Kunde; Altersüberprüfung; Bereitstellung interessengerechter Informationen; Übermittlung von Werbung für eigene und fremde Angebote "
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            },
+            {
+                "purpose":"interessengerechten Direktwerbung ",
+                "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-f",
+                "description": "Protokollierung des An- und Abmeldeverfahrens zu unserem Newsletter sowie Effektuierung der Versendung und Ausgestaltung unserer Newsletter mittels ergänzender Erfolgsmessungen"
+              },
+              {
+                "reference": "DSGVO-6-1-a",
+                "description": "Art. 6 Abs. 1 Satz 1 Buchstabe a DSGVO: Soweit Sie sich zur Authentifizierung mittels „Social Login“ entscheiden, erfolgt die Übermittlung ihrer personenbezogenen Daten zwischen dem jeweiligen sozialen Netzwerk und uns auf Grundlage ihrer Einwilligung"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": true,
+              "reasoning":"Protokollierung des An- und Abmeldeverfahrens zu unserem Newsletter sowie Effektuierung der Versendung und Ausgestaltung unserer Newsletter mittels ergänzender Erfolgsmessungen"
+            },
+            {
+              "exists":true,
+              "reasoning":"Werbezwecke; Pflege der Kundenbeziehung; Vermarktung unserer Services"
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              },
+              {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "Dienstleister für Gewinnspiel. bzw. Aktionsdurchführung"
+                }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"Personenbezogene Daten werden gelöscht, sobald deren weitergehende Verarbeitung nicht mehr für die jeweilige Zweckerreichung erforderlich ist und gesetzliche Aufbewahrungsfristen einer Löschung nicht entgegenstehen. Dies ist regelmäßig mit Löschung Ihres Nutzerkontos der Fall. ",
+              "aggregationFunction": "max"
+            },
+            {
+                "purposeConditional":"Dauer der Registrierung",
+                "aggregationFunction":"max"
+            },
+            {
+              "purposeConditional":"Dauer des Gewinnspiels/der Aktion",
+              "aggregationFunction":"max"
+            },
+            {
+              "purposeConditional":"10 Jahre nach Abwicklung der letzten Bestellung ",
+              "aggregationFunction":"max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+      {
+          "_id": "e58a5115-de3f-4f5a-b8fb-ead95c861aab",
+          "category": "Anmeldedaten",
+          "purposes": [
+            {
+                "purpose":"Bereitstellung des geschützten Login-Bereichs",
+                "description":"Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zum Zweck der Bereitstellung des geschützten Login-Bereichs sowie zum Zweck der Anmeldung, Organisation und Abwicklung Ihrer jeweiligen Anmeldung. "
+            },
+            {
+              "purpose":"Allgemeiner Newsletter",
+              "description":"Verifikation des Registrierungsprozesses („Double Opt-In“) samt Nachvollziehbarkeit der erfolgten An- und Abmeldungen („Protokollierung“); Versendung sowie interessengerechte Gestaltung des Newsletters; Messung der Öffnungs- und Klickraten zum Zweck der Optimierung unseres Newsletter-Angebots "
+            },
+            {
+              "purpose": "Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst d) DSGVO",
+              "description": "Die Datenerhebungen erfolgen zum Zweck der Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst. d) DSGVO"
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            },
+            {
+                "purpose":"interessengerechten Direktwerbung ",
+                "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+              },
+              {
+                "reference": "DSGVO-6-1-a",
+                "description": "Art. 6 Abs. 1 Satz 1 Buchstabe a DSGVO: Soweit Sie sich zur Authentifizierung mittels „Social Login“ entscheiden, erfolgt die Übermittlung ihrer personenbezogenen Daten zwischen dem jeweiligen sozialen Netzwerk und uns auf Grundlage ihrer Einwilligung"
+              },
+              {
+                  "reference":"DSGVO-6-1-f",
+                  "description":"Verifikation des Registrierungsprozesses („Double Opt-In“) samt Nachvollziehbarkeit der erfolgten An- und Abmeldungen („Protokollierung“); Versendung sowie interessengerechte Gestaltung des Newsletters; Messung der Öffnungs- und Klickraten zum Zweck der Optimierung unseres Newsletter-Angebots"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": true,
+              "reasoning":"Verifikation des Registrierungsprozesses („Double Opt-In“) samt Nachvollziehbarkeit der erfolgten An- und Abmeldungen („Protokollierung“); Versendung sowie interessengerechte Gestaltung des Newsletters; Messung der Öffnungs- und Klickraten zum Zweck der Optimierung unseres Newsletter-Angebots"
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              },
+              {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "Dienstleister für den Newsletterversand"
+                },
+                {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "Unternehmen innerhalb der Unternehmensgruppe"
+                },
+              {
+                "name": "Meta Platforms Ireland Limited",
+                "country": "IE",
+                "division": null,
+                "address": " Meta Platforms Ireland Limited, Hanover Reach, 5-7 Hanover Quay, Dublin 2, Ireland",
+                "representative": null,
+                "category": "Social Media"
+              },
+              {
+                "name": "Apple Inc.",
+                "country": "US",
+                "division": null,
+                "address": "Apple Inc., Infinite Loop, Cupertino, CA 95014, USA",
+                "representative": null,
+                "category": null
+              },
+              {
+                "name": "Google Ireland Ltd",
+                "country": "US",
+                "division": null,
+                "address": "Google Ireland Ltd, Gordon House, Barrow Street, Dublin 4, Ireland",
+                "representative": null,
+                "category": null
+              }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"Personenbezogene Daten werden gelöscht, sobald deren weitergehende Verarbeitung nicht mehr für die jeweilige Zweckerreichung erforderlich ist und gesetzliche Aufbewahrungsfristen einer Löschung nicht entgegenstehen. Dies ist regelmäßig mit Löschung Ihres Nutzerkontos der Fall. ",
+              "aggregationFunction": "max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+        {
+          "_id": "cbed1ee2-df0d-4875-9a61-2017420541ac",
+          "category": "Personenstammdaten",
+          "purposes": [
+            {
+                "purpose":"Bereitstellung des geschützten Login-Bereichs",
+                "description":"Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zum Zweck der Bereitstellung des geschützten Login-Bereichs sowie zum Zweck der Anmeldung, Organisation und Abwicklung Ihrer jeweiligen Anmeldung. "
+            },
+            {
+              "description":"Teilnahme im Rahmen der FOCUS Online Community",
+              "purpose":"Identifizierung; Kontaktaufnahme; Prüfung der Zugangsberechtigung"
+            },
+            {
+              "purpose":"Allgemeiner Newsletter",
+              "description":"Verifikation des Registrierungsprozesses („Double Opt-In“) samt Nachvollziehbarkeit der erfolgten An- und Abmeldungen („Protokollierung“); Versendung sowie interessengerechte Gestaltung des Newsletters; Messung der Öffnungs- und Klickraten zum Zweck der Optimierung unseres Newsletter-Angebots "
+            },
+            {
+              "purpose":"Gewinnspiele und Aktionen",
+              "description":"Identifizierung; Altersverifikation"
+            },
+            {
+              "purpose":"Online-Shopping im FOCUS-Online PDF-Shop",
+              "description":"Identifizierung; Kontaktaufnahme; Registrierung als Kunde; Altersüberprüfung; Bereitstellung interessengerechter Informationen; Übermittlung von Werbung für eigene und fremde Angebote "
+            },
+            {
+              "purpose":"Kunden-Feedback oder Kontaktaufnahme mit dem Kunden-Service",
+              "description":"Bearbeitung von Kundenanfragen und Nutzerbeschwerden "
+            },
+            {
+              "purpose": "Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst d) DSGVO",
+              "description": "Die Datenerhebungen erfolgen zum Zweck der Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst. d) DSGVO"
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            },
+            {
+                "purpose":"interessengerechten Direktwerbung ",
+                "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+              },
+              {
+                "reference": "DSGVO-6-1-a",
+                "description": "Art. 6 Abs. 1 Satz 1 Buchstabe a DSGVO: Soweit Sie sich zur Authentifizierung mittels „Social Login“ entscheiden, erfolgt die Übermittlung ihrer personenbezogenen Daten zwischen dem jeweiligen sozialen Netzwerk und uns auf Grundlage ihrer Einwilligung"
+              },
+              {
+                  "reference":"DSGVO-6-1-f",
+                  "description":"Protokollierung des An- und Abmeldeverfahrens zu unserem Newsletter sowie Effektuierung der Versendung und Ausgestaltung unserer Newsletter mittels ergänzender Erfolgsmessungen"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": true,
+              "reasoning":"Protokollierung des An- und Abmeldeverfahrens zu unserem Newsletter sowie Effektuierung der Versendung und Ausgestaltung unserer Newsletter mittels ergänzender Erfolgsmessungen"
+            },
+            {
+              "exists":true,
+              "reasoning":"Werbezwecke; Pflege der Kundenbeziehung; Vermarktung unserer Services"
+            },
+            {
+              "exists":true,
+              "reasoning":"Verbesserung unseres Service; Kundenbindung"
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              },
+              {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "Dienstleister für Gewinnspiel. bzw. Aktionsdurchführung"
+                },
+              {
+                "name": "Meta Platforms Ireland Limited",
+                "country": "IE",
+                "division": null,
+                "address": " Meta Platforms Ireland Limited, Hanover Reach, 5-7 Hanover Quay, Dublin 2, Ireland",
+                "representative": null,
+                "category": "Social Media"
+              },
+              {
+                "name": "Apple Inc.",
+                "country": "US",
+                "division": null,
+                "address": "Apple Inc., Infinite Loop, Cupertino, CA 95014, USA",
+                "representative": null,
+                "category": null
+              },
+              {
+                "name": "Google Ireland Ltd",
+                "country": "US",
+                "division": null,
+                "address": "Google Ireland Ltd, Gordon House, Barrow Street, Dublin 4, Ireland",
+                "representative": null,
+                "category": null
+              }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"Personenbezogene Daten werden gelöscht, sobald deren weitergehende Verarbeitung nicht mehr für die jeweilige Zweckerreichung erforderlich ist und gesetzliche Aufbewahrungsfristen einer Löschung nicht entgegenstehen. Dies ist regelmäßig mit Löschung Ihres Nutzerkontos der Fall. ",
+              "aggregationFunction": "max"
+            },
+            {
+              "purposeConditional":"Dauer der Registrierung",
+              "aggregationFunction":"max"
+            },
+            {
+              "purposeConditional":"Dauer des Gewinnspiels/der Aktion",
+              "aggregationFunction":"max"
+            },
+            {
+              "temporal":"P10Y",
+              "purposeConditional":"10 Jahre nach Abwicklung der letzten Bestellung ",
+              "aggregationFunction":"max"
+            },
+            {
+              "purposeConditional":"Bearbeitung der Anfrage",
+              "aggregationFunction":"max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+        {
+          "_id": "aaeadd24-3ec9-4280-aecd-f81ceba82e70",
+          "category": "Nutzerkontodaten",
+          "purposes": [
+            {
+                "purpose":"Bereitstellung des geschützten Login-Bereichs",
+                "description":"Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zum Zweck der Bereitstellung des geschützten Login-Bereichs sowie zum Zweck der Anmeldung, Organisation und Abwicklung Ihrer jeweiligen Anmeldung. "
+            },
+            {
+              "purpose": "Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst d) DSGVO",
+              "description": "Die Datenerhebungen erfolgen zum Zweck der Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst. d) DSGVO"
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            },
+            {
+                "purpose":"interessengerechten Direktwerbung ",
+                "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+              },
+              {
+                "reference": "DSGVO-6-1-a",
+                "description": "Art. 6 Abs. 1 Satz 1 Buchstabe a DSGVO: Soweit Sie sich zur Authentifizierung mittels „Social Login“ entscheiden, erfolgt die Übermittlung ihrer personenbezogenen Daten zwischen dem jeweiligen sozialen Netzwerk und uns auf Grundlage ihrer Einwilligung"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": false,
+              "reasoning":null
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              },
+              {
+                "name": "Meta Platforms Ireland Limited",
+                "country": "IE",
+                "division": null,
+                "address": " Meta Platforms Ireland Limited, Hanover Reach, 5-7 Hanover Quay, Dublin 2, Ireland",
+                "representative": null,
+                "category": "Social Media"
+              },
+              {
+                "name": "Apple Inc.",
+                "country": "US",
+                "division": null,
+                "address": "Apple Inc., Infinite Loop, Cupertino, CA 95014, USA",
+                "representative": null,
+                "category": null
+              },
+              {
+                "name": "Google Ireland Ltd",
+                "country": "US",
+                "division": null,
+                "address": "Google Ireland Ltd, Gordon House, Barrow Street, Dublin 4, Ireland",
+                "representative": null,
+                "category": null
+              }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"Personenbezogene Daten werden gelöscht, sobald deren weitergehende Verarbeitung nicht mehr für die jeweilige Zweckerreichung erforderlich ist und gesetzliche Aufbewahrungsfristen einer Löschung nicht entgegenstehen. Dies ist regelmäßig mit Löschung Ihres Nutzerkontos der Fall. ",
+              "aggregationFunction": "max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+        {
+          "_id": "15e948ec-06f4-48dc-85e5-dc242e92e952",
+          "category": "Zugriffsdaten",
+          "purposes": [
+              {
+                  "purpose":"Aufrufen unserer Services",
+                  "description":"Verbindungsaufbau; Darstellung der Inhalte des Service; Fehlerdiagnose"
+              },
+              {
+                  "purpose":"Allgemeiner Newsletter",
+                  "description":"Verifikation des Registrierungsprozesses („Double Opt-In“) samt Nachvollziehbarkeit der erfolgten An- und Abmeldungen („Protokollierung“); Versendung sowie interessengerechte Gestaltung des Newsletters; Messung der Öffnungs- und Klickraten zum Zweck der Optimierung unseres Newsletter-Angebots "
+              },
+            {
+                "purpose":"Bereitstellung des geschützten Login-Bereichs",
+                "description":"Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zum Zweck der Bereitstellung des geschützten Login-Bereichs sowie zum Zweck der Anmeldung, Organisation und Abwicklung Ihrer jeweiligen Anmeldung. "
+            },
+            {
+              "purpose":"Umfragen",
+              "description":"Schutz vor Manipulationsversuchen, insbes. Verhinderung unerlaubter Mehrfachteilnahme "
+            },
+            {
+              "purpose": "Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst d) DSGVO",
+              "description": "Die Datenerhebungen erfolgen zum Zweck der Erfüllung des Grundsatzes der Richtigkeit nach Art. 5 Abs. 1 Buchst. d) DSGVO"
+            },
+            {
+                "purpose":"Vertragsdurchführung",
+                "description":"Zweck der Vertragsdurchführung gemäß Art. 6 Abs. 1 Buchst. b) DSGVO"
+            },
+            {
+                "purpose":"Rechtsdurchsetzung und Inkasso",
+                "description":"Zweck der Rechtsdurchsetzung und zum Inkasso gemäß Art. 6 Abs. 1 Buchst. b) und f) DSGVO"
+            },
+            {
+                "purpose":"interessengerechten Direktwerbung ",
+                "description":"zum Zweck der möglichst interessengerechten Direktwerbung gemäß Art. 6 Abs. 1 Buchst. f) DSGVO in Verbindung mit ErwGr 46 DSGVO"
+            }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO: Mit Abschluss der Registrierung schließen Sie einen Vertrag über die Nutzung des geschützten Login-Bereichs innerhalb der BurdaForward-Webseiten. Details dazu können Sie unseren Nutzungsbedingungen entnehmen."
+              },
+              {
+                "reference": "DSGVO-6-1-a",
+                "description": "Art. 6 Abs. 1 Satz 1 Buchstabe a DSGVO: Soweit Sie sich zur Authentifizierung mittels „Social Login“ entscheiden, erfolgt die Übermittlung ihrer personenbezogenen Daten zwischen dem jeweiligen sozialen Netzwerk und uns auf Grundlage ihrer Einwilligung"
+              },
+              {
+                  "reference":"DSGVO-6-1-f",
+                  "description":"Von uns verfolgtes berechtigtes Interesse:ordnungsgemäße Funktion der Services; Sicherheit von Daten und Geschäftsprozessen; Verhinderung von Missbrauch; Verhütung von Schäden durch Eingriffe in Informationssysteme"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": true,
+              "reasoning":"ordnungsgemäße Funktion der Services; Sicherheit von Daten und Geschäftsprozessen; Verhinderung von Missbrauch; Verhütung von Schäden durch Eingriffe in Informationssysteme"
+            },
+            {
+              "exists": true,
+              "reasoning":"Verhinderung von Missbrauch"
+          }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              },
+              {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "externe Inhalteanbieter"
+                },
+                {
+                  "name": null,
+                  "country": null,
+                  "division": null,
+                  "address": null,
+                  "representative": null,
+                  "category": "Dienstleister für Umfragentool"
+                },
+              {
+                "name": "Meta Platforms Ireland Limited",
+                "country": "IE",
+                "division": null,
+                "address": " Meta Platforms Ireland Limited, Hanover Reach, 5-7 Hanover Quay, Dublin 2, Ireland",
+                "representative": null,
+                "category": "Social Media"
+              },
+              {
+                "name": "Apple Inc.",
+                "country": "US",
+                "division": null,
+                "address": "Apple Inc., Infinite Loop, Cupertino, CA 95014, USA",
+                "representative": null,
+                "category": null
+              },
+              {
+                "name": "Google Ireland Ltd",
+                "country": "US",
+                "division": null,
+                "address": "Google Ireland Ltd, Gordon House, Barrow Street, Dublin 4, Ireland",
+                "representative": null,
+                "category": null
+              }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"Personenbezogene Daten werden gelöscht, sobald deren weitergehende Verarbeitung nicht mehr für die jeweilige Zweckerreichung erforderlich ist und gesetzliche Aufbewahrungsfristen einer Löschung nicht entgegenstehen. Dies ist regelmäßig mit Löschung Ihres Nutzerkontos der Fall. ",
+              "aggregationFunction": "max"
+            },
+            {
+              "temporal":"P4w",
+              "aggregationFunction":"max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": " Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        },
+        {
+          "_id": "76fb678a-1944-4e07-b5ba-bc69683f8ec1",
+          "category": "Geolokalisationsdaten",
+          "purposes": [
+              {
+                  "purpose":"Bereitstellung ortbezogener Nachrichten und sonstiger Inhalte ",
+                  "description":"Bereitstellung ortbezogener Nachrichten und sonstiger Inhalte "
+              }
+          ],
+          "legalBases": [
+            {
+                "reference": "DSGVO-6-1-b",
+                "description": "Art. 6 Abs. 1 Satz 1 lit. b DSGVO"
+              }
+          ],
+          "legitimateInterests": [
+            {
+              "exists": false,
+              "reasoning":null
+            }
+          ],
+          "recipients": [
+            {
+              "name": null,
+              "country": null,
+              "division": null,
+              "address": null,
+              "representative": null,
+              "category": "Hostingdienstleister"
+            },
+            {
+                "name": null,
+                "country": null,
+                "division": null,
+                "address": null,
+                "representative": null,
+                "category": "staatliche Behörden"
+              }
+          ],
+          "storage": [
+            {
+              "purposeConditional":"Dauer der Inanspruchnahme des jeweiligen ortsbezogenen Service",
+              "aggregationFunction": "max"
+            }
+          ],
+          "nonDisclosure": {
+            "consequences": "Bei erforderlichen Daten hat die Nichtbereitstellung zur Folge, dass der betreffende Service nicht erbracht werden kann. Ansonsten hat die Nichtbereitstellung ggf. zur Folge, dass wir unsere Dienste nicht in gleicher Form und Qualität erbringen können.",
+            "legalRequirement": false,
+            "contractualRegulation": false,
+            "obligationToProvide": false
+          }
+        }
+  
+    ],
+    "thirdCountryTransfers": [
+      {
+        "country": "Drittland",
+        "adequacyDecision": {
+          "available": true,
+          "description": "Wenn die Übermittlung der Daten an ein Drittland nicht zur Erfüllung unseres Vertrags mit Ihnen dient, wir keine Einwilligung Ihrerseits haben, die Übermittlung nicht zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist und auch sonst keine Ausnahmeregelung nach Art. 49 DSGVO gilt, übermitteln wir Ihre Daten nur dann an ein Drittland, wenn ein Angemessenheitsbeschluss nach Art. 45 DSGVO oder geeignete Garantien nach Art. 46 DSGVO vorliegen."
+        },
+        "appropriateGuarantees": {
+          "available": true
+        },
+        "presenceOfEnforceableRightsAndEffectiveRemedies": {
+          "available": false
+        },
+        "standardDataProtectionClause": {
+          "available": true,
+          "description": "Wir erfüllen durch den Abschluss der von der Europäischen Kommission erlassenen EU-Standarddatenschutzklauseln mit der empfangenden Stelle die Anforderungen zur Überprüfung hinsichtlich geeigneter Garantien nach Art. 46 Abs. 2 Buchst. c) DSGVO, sowie hinsichtlich eines angemessenen Datenschutzniveaus im Drittland. Kopien der EU-Standarddatenschutzklauseln erhalten Sie auf der Website der Europäischen Kommission, abrufbar hier."
+        }
+      }
+    ],
+    "accessAndDataPortability": {
+      "available": true,
+      "description": "Sie haben das Recht, von uns eine Bestätigung darüber zu verlangen, ob Sie betreffende personenbezogene Daten verarbeitet werden, sowie ggf. auf Auskunft über diese personenbezogenen Daten und die weiteren in Art. 15 DSGVO aufgeführten Informationen",
+      "url": null,
+      "email": "focusonline@datenschutzanfrage.de",
+      "identificationEvidences": null,
+      "administrativeFee": {
+        "amount": null,
+        "currency": null
+      },
+      "dataFormats": null
+    },
+    "rightToInformation": {
+      "available": null,
+      "description": null,
+      "url": null,
+      "email": "focusonline@datenschutzanfrage.de",
+      "identificationEvidences": null
+    },
+    "rightToRectificationOrDeletion": {
+      "available": true,
+      "description": "Sie haben das Recht, von uns zu verlangen, dass Sie betreffende personenbezogene Daten unverzüglich gelöscht werden, sofern einer der in Art. 17 Abs. 1 DSGVO genannten Gründe zutrifft und die Verarbeitung nicht für einen der in Art. 17 Abs. 3 DSGVO geregelten Zwecke erforderlich ist.",
+      "url": null,
+      "email": "focusonline@datenschutzanfrage.de",
+      "identificationEvidences": null
+    },
+    "rightToDataPortability": {
+      "available": true,
+      "description": "Sie haben unter den in Art. 20 Abs. 1 DSGVO genannten Voraussetzungen das Recht, die Sie betreffenden personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten, und das Recht, diese Daten einem anderen Verantwortlichen ohne Behinderung durch uns zu übermitteln. Bei der Ausübung des Rechts auf Datenübertragbarkeit haben Sie das Recht, zu erwirken, dass die personenbezogenen Daten direkt von uns an eine andere verantwortliche Stelle übermittelt werden, soweit dies technisch machbar ist.",
+      "url": null,
+      "email": "focusonline@datenschutzanfrage.de",
+      "identificationEvidences": null
+    },
+    "rightToWithdrawConsent": {
+      "available": true,
+      "description": "Soweit die Verarbeitung auf Ihrer Einwilligung beruht, haben Sie das Recht, die Einwilligung jederzeit zu widerrufen. Die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung wird dadurch nicht berührt.",
+      "url": null,
+      "email": "focusonline@datenschutzanfrage.de",
+      "identificationEvidences": null
+    },
+    "rightToComplain": {
+      "available": true,
+      "description": "Sie haben ein Beschwerderecht bei der für unser Unternehmen zuständigen Aufsichtsbehörd",
+      "url": "https://datenschutzanfrage.de/?source=focusonline",
+      "email": "focusonline@datenschutzanfrage.de",
+      "identificationEvidences": null,
+      "supervisoryAuthority": {
+        "name": "Kandesamt für Datenschutzaufsicht",
+        "address": "Sie haben ein Beschwerderecht bei der für unser Unternehmen zuständigen Aufsichtsbehörd",
+        "country": "DE",
+        "email": null,
+        "phone": null
+      }
+    },
+    "automatedDecisionMaking": {
+      "logicInvolved": null,
+      "inUse": null,
+      "scopeAndIntendedEffects": null
+    },
+    "changesOfPurpose": [
+      {
+        "description": null,
+        "affectedDataCategories": null,
+        "plannedDateOfChange": null,
+        "urlOfNewVersion": null
+      }
+    ]
+  },
+  {
+    "meta": {
+      "_id": "c117fb54-d16e-450d-9559-5ff02b26f70c",
+      "name": "faz",
+      "created": "2023-08-16T12:21:52.177154",
+      "modified": "2023-08-16T12:21:52.177179",
+      "version": 1,
+      "language": "de",
+      "status": "active",
+      "url": "https://www.faz.net",
+      "_hash": null
+    },
+    "controller": {
+      "name": "Frankfurter Allgemeine Zeitung GmbH",
+      "country": "DE",
+      "address": "Frankfurter Allgemeine Zeitung GmbH, Pariser Straße 1, 60486 Frankfurt am Main",
+      "division": "",
+      "representative": {
+        "name": null,
+        "email": "info@faz.net",
+        "phone": null
+      }
+    },
+    "dataProtectionOfficer": {
+      "email": "datenschutz@faz.net",
+      "phone": null,
+      "country": "DE",
+      "name": null,
+      "address": "Frankfurter Allgemeine Zeitung GmbH, Abteilung Datenschutz, Pariser Straße 1, 60486 Frankfurt am Main"
+    },
+    "dataDisclosed": [
+       {
+        "_id": "1cc1b64f-af0c-4d9d-a354-63a45163c85a",
+        "category": "Adressdaten",
+        "purposes": [
+          {
+            "purpose": "Kontakt und Anfragen ",
+            "description": "Die Mitteilung von als Pflichtangaben gekennzeichneten Adress- und Telekommunikationsdaten ist dabei erforderlich, um Ihr Anliegen bearbeiten und beantworten zu können. Die freiwillige Angabe weiterer Daten erleichtert uns die Bearbeitung Ihrer Anfrage. Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "purpose":"Registrierung",
+              "description":"Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche "
+          },
+          {
+              "purpose":"Missbrauchsvermeidung",
+              "description":"Wir verarbeiten Ihrer Registrierungsdaten außerdem zum Zwecke der Missbrauchsvermeidung und zur internen Erlöszuordnung. "
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | F.A.Z. Newsletter",
+              "description":"Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | Web-Push-Nachrichten",
+              "description":"Bei Web-Push-Benachrichtigungen handelt es sich um regelmäßige Informationen zu den wichtigsten Ereignissen des Tages, die mithilfe unseres beauftragten Push-Dienstleisters an Ihren Browser bzw. Ihr Endgerät gesendet und dort priorisiert (in der Regel im Header des Browsers) dargestellt werden. Als besonderer Service werden Ihre über Push-Nachrichten aufgerufenen Artikel ausgewertet, sodass Ihnen in späteren Push-Nachrichten möglichst für Sie passende Nachrichten bzw. Artikel angezeigt werden."
+          },
+          {
+              "purpose":"Briefe an die Herausgeber",
+              "description":"Ihre Angaben in Ihren Briefen an die Herausgeber verarbeiten wir zur Veröffentlichung Ihrer Beiträge, um sich mit Themen öffentlich auseinander setzen zu können (Art. 6 Abs. 1 b, f DSGVO, journalistische Zwecke). Um Briefe an die Herausgeber anzufertigen, müssen Sie uns Ihre erforderlichen Adress- und Telekommunikationsdaten mitteilen. Mit den Briefen an die Herausgeber wird Ihr Name veröffentlicht. Sie können also nicht unter einem Pseudonym oder anonym publiziert werden. "
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+          {
+            "purpose":"Umfragen",
+            "description":"Wir verarbeiten Ihre in Umfragen mitgeteilten Daten für die Abwicklung und Auswertung der jeweiligen Umfrage, deren Zwecke jeweils bei der Umfrage angegeben sind (Art. 6 Abs. 1 b, f DSGVO). Die Pflichtangaben benötigen wir, um plausible Ergebnisse zu generieren."
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Druckereien"
+          },
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Lettershops"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Callcenter"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "E-Mail-Dienstleister"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Logistikunternehmen"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Postdienstleister"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Druckereien"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Rechenzentren"
+          },{
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Steuer- und Rechtsberater"
+          },
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Gewinnspieldienstleister"
+          },
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Vermarkter digitaler Werbemittelplätze"
+          },
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Reichweitenmesser"
+          },
+          {
+            "name": null,
+            "country": null,
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Analysedienstleister"
+          },
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "7742d33b-4ca0-4daf-a8bc-6b686e7ec3d3",
+        "category": "Telekommunikationsdaten",
+        "purposes": [
+          {
+            "purpose": "Kontakt und Anfragen ",
+            "description": "Die Mitteilung von als Pflichtangaben gekennzeichneten Adress- und Telekommunikationsdaten ist dabei erforderlich, um Ihr Anliegen bearbeiten und beantworten zu können. Die freiwillige Angabe weiterer Daten erleichtert uns die Bearbeitung Ihrer Anfrage. Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "purpose":"Registrierung",
+              "description":"Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche "
+          },
+          {
+              "purpose":"Missbrauchsvermeidung",
+              "description":"Wir verarbeiten Ihrer Registrierungsdaten außerdem zum Zwecke der Missbrauchsvermeidung und zur internen Erlöszuordnung. "
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | F.A.Z. Newsletter",
+              "description":"Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | Web-Push-Nachrichten",
+              "description":"Bei Web-Push-Benachrichtigungen handelt es sich um regelmäßige Informationen zu den wichtigsten Ereignissen des Tages, die mithilfe unseres beauftragten Push-Dienstleisters an Ihren Browser bzw. Ihr Endgerät gesendet und dort priorisiert (in der Regel im Header des Browsers) dargestellt werden. Als besonderer Service werden Ihre über Push-Nachrichten aufgerufenen Artikel ausgewertet, sodass Ihnen in späteren Push-Nachrichten möglichst für Sie passende Nachrichten bzw. Artikel angezeigt werden."
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          },
+          {
+            "name":"Zenloop GmbH",
+            "country":null,
+            "division":null,
+            "address":null,
+            "representative":null,
+            "category":"Umfrage-Software-Dienstleister"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Bonitätsauskunft löschen wir nach unserer Entscheidung über die Begründung, Durchführung oder Beendigung des Vertragsverhältnisses.",
+              "aggregationFunction":"min"
+          },
+          {
+              "purposeConditional":"Die veröffentlichten Briefe an die Herausgeber können online abgerufen werden, bis das entsprechende Thema nicht mehr aktuell bzw. relevant ist. Danach werden sie in unseren Archiven aufbewahrt.",
+              "aggregationFunction":"max"
+          },
+          {
+              "purposeConditional":"Ihre für Werbezwecke erhobenen Daten speichern und verarbeiten wir, solange der Werbezweck besteht bzw. bis uns ein Widerruf Ihrer Einwilligung oder Ihr Widerspruch gegen die Verarbeitung Ihrer Daten für Werbezwecke erreicht. Soweit für vorstehende Zwecke nicht erforderlich, löschen wir Daten aus Ihrer Teilnahme an Gewinnspielen oder Verkaufsförderungsmaßnahmen nach Durchführung des jeweiligen Gewinnspiels bzw. der jeweiligen Verkaufsförderungsmaßnahmen, es sei denn, wir sind zur Aufbewahrung verpflichtet (z.B. im Falle eines Gewinns werden Handels- bzw. Geschäftsbriefe für 10 Jahre aufbewahrt, § 147 AO, § 257 HGB).",
+              "aggregationFunction":"max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "51ff943b-95fe-46ec-bf64-f39c54121dc4",
+        "category": "Registrierungsdaten",
+        "purposes": [
+          {
+            "purpose": "Kontakt und Anfragen ",
+            "description": "Die Mitteilung von als Pflichtangaben gekennzeichneten Adress- und Telekommunikationsdaten ist dabei erforderlich, um Ihr Anliegen bearbeiten und beantworten zu können. Die freiwillige Angabe weiterer Daten erleichtert uns die Bearbeitung Ihrer Anfrage. Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "purpose":"Registrierung",
+              "description":"Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche "
+          },
+          {
+              "purpose":"Missbrauchsvermeidung",
+              "description":"Wir verarbeiten Ihrer Registrierungsdaten außerdem zum Zwecke der Missbrauchsvermeidung und zur internen Erlöszuordnung. "
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | F.A.Z. Newsletter",
+              "description":"Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | Web-Push-Nachrichten",
+              "description":"Bei Web-Push-Benachrichtigungen handelt es sich um regelmäßige Informationen zu den wichtigsten Ereignissen des Tages, die mithilfe unseres beauftragten Push-Dienstleisters an Ihren Browser bzw. Ihr Endgerät gesendet und dort priorisiert (in der Regel im Header des Browsers) dargestellt werden. Als besonderer Service werden Ihre über Push-Nachrichten aufgerufenen Artikel ausgewertet, sodass Ihnen in späteren Push-Nachrichten möglichst für Sie passende Nachrichten bzw. Artikel angezeigt werden."
+          },
+          {
+              "purpose":"Briefe an die Herausgeber",
+              "description":"Ihre Angaben in Ihren Briefen an die Herausgeber verarbeiten wir zur Veröffentlichung Ihrer Beiträge, um sich mit Themen öffentlich auseinander setzen zu können (Art. 6 Abs. 1 b, f DSGVO, journalistische Zwecke). Um Briefe an die Herausgeber anzufertigen, müssen Sie uns Ihre erforderlichen Adress- und Telekommunikationsdaten mitteilen. Mit den Briefen an die Herausgeber wird Ihr Name veröffentlicht. Sie können also nicht unter einem Pseudonym oder anonym publiziert werden. "
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+          {
+            "purpose":"Umfragen",
+            "description":"Wir verarbeiten Ihre in Umfragen mitgeteilten Daten für die Abwicklung und Auswertung der jeweiligen Umfrage, deren Zwecke jeweils bei der Umfrage angegeben sind (Art. 6 Abs. 1 b, f DSGVO). Die Pflichtangaben benötigen wir, um plausible Ergebnisse zu generieren."
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "VWD Vereinigte Wirtschaftsdienste GmbH",
+            "country": "DE",
+            "division": null,
+            "address": "VWD Vereinigte Wirtschaftsdienste GmbH, Mainzer Landstraße 178 – 190, 60327 Frankfurt am Main",
+            "representative": null,
+            "category": "Dienstleister Musterdepot und Börsenspiel"
+          },
+          {
+            "name": "Karlsruher Instituts für Technologie",
+            "country": "DE",
+            "division": null,
+            "address": "Karlsruher Instituts für Technologie, Kaiserstr. 12, 76131 Karlsruhe",
+            "representative": null,
+            "category": "Dienstleister Prognosebörse"
+          },
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          },
+          {
+            "name":"Zenloop GmbH",
+            "country":null,
+            "division":null,
+            "address":null,
+            "representative":null,
+            "category":"Umfrage-Software-Dienstleister"
+          },
+          {
+            "name":"easyfeedback GmbH",
+            "country":"DE",
+            "division":null,
+            "address":"easyfeedback GmbH, Ernst-Abbe-Straße 4, 56070 Koblenz",
+            "representative":null,
+            "category":"Umfrage-Software-Dienstleister"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Bonitätsauskunft löschen wir nach unserer Entscheidung über die Begründung, Durchführung oder Beendigung des Vertragsverhältnisses.",
+              "aggregationFunction":"min"
+          },
+          {
+              "purposeConditional":"Die veröffentlichten Briefe an die Herausgeber können online abgerufen werden, bis das entsprechende Thema nicht mehr aktuell bzw. relevant ist. Danach werden sie in unseren Archiven aufbewahrt.",
+              "aggregationFunction":"max"
+          },
+          {
+              "purposeConditional":"Ihre für Werbezwecke erhobenen Daten speichern und verarbeiten wir, solange der Werbezweck besteht bzw. bis uns ein Widerruf Ihrer Einwilligung oder Ihr Widerspruch gegen die Verarbeitung Ihrer Daten für Werbezwecke erreicht. Soweit für vorstehende Zwecke nicht erforderlich, löschen wir Daten aus Ihrer Teilnahme an Gewinnspielen oder Verkaufsförderungsmaßnahmen nach Durchführung des jeweiligen Gewinnspiels bzw. der jeweiligen Verkaufsförderungsmaßnahmen, es sei denn, wir sind zur Aufbewahrung verpflichtet (z.B. im Falle eines Gewinns werden Handels- bzw. Geschäftsbriefe für 10 Jahre aufbewahrt, § 147 AO, § 257 HGB).",
+              "aggregationFunction":"max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "60ab12e9-9bc6-4fe9-bfbc-aa72ba26e910",
+        "category": "Bestelldaten",
+        "purposes": [
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          },
+          {
+            "name":"Zenloop GmbH",
+            "country":null,
+            "division":null,
+            "address":null,
+            "representative":null,
+            "category":"Umfrage-Software-Dienstleister"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Bonitätsauskunft löschen wir nach unserer Entscheidung über die Begründung, Durchführung oder Beendigung des Vertragsverhältnisses.",
+              "aggregationFunction":"min"
+          },
+          {
+              "purposeConditional":"Die veröffentlichten Briefe an die Herausgeber können online abgerufen werden, bis das entsprechende Thema nicht mehr aktuell bzw. relevant ist. Danach werden sie in unseren Archiven aufbewahrt.",
+              "aggregationFunction":"max"
+          },
+          {
+              "purposeConditional":"Ihre für Werbezwecke erhobenen Daten speichern und verarbeiten wir, solange der Werbezweck besteht bzw. bis uns ein Widerruf Ihrer Einwilligung oder Ihr Widerspruch gegen die Verarbeitung Ihrer Daten für Werbezwecke erreicht. Soweit für vorstehende Zwecke nicht erforderlich, löschen wir Daten aus Ihrer Teilnahme an Gewinnspielen oder Verkaufsförderungsmaßnahmen nach Durchführung des jeweiligen Gewinnspiels bzw. der jeweiligen Verkaufsförderungsmaßnahmen, es sei denn, wir sind zur Aufbewahrung verpflichtet (z.B. im Falle eines Gewinns werden Handels- bzw. Geschäftsbriefe für 10 Jahre aufbewahrt, § 147 AO, § 257 HGB).",
+              "aggregationFunction":"max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "2875b3ee-1b16-434c-b542-f324962baed5",
+        "category": "Anzeigedaten",
+        "purposes": [
+          {
+            "purpose": "Kontakt und Anfragen ",
+            "description": "Die Mitteilung von als Pflichtangaben gekennzeichneten Adress- und Telekommunikationsdaten ist dabei erforderlich, um Ihr Anliegen bearbeiten und beantworten zu können. Die freiwillige Angabe weiterer Daten erleichtert uns die Bearbeitung Ihrer Anfrage. Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "purpose":"Registrierung",
+              "description":"Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche "
+          },
+          {
+              "purpose":"Missbrauchsvermeidung",
+              "description":"Wir verarbeiten Ihrer Registrierungsdaten außerdem zum Zwecke der Missbrauchsvermeidung und zur internen Erlöszuordnung. "
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | F.A.Z. Newsletter",
+              "description":"Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | Web-Push-Nachrichten",
+              "description":"Bei Web-Push-Benachrichtigungen handelt es sich um regelmäßige Informationen zu den wichtigsten Ereignissen des Tages, die mithilfe unseres beauftragten Push-Dienstleisters an Ihren Browser bzw. Ihr Endgerät gesendet und dort priorisiert (in der Regel im Header des Browsers) dargestellt werden. Als besonderer Service werden Ihre über Push-Nachrichten aufgerufenen Artikel ausgewertet, sodass Ihnen in späteren Push-Nachrichten möglichst für Sie passende Nachrichten bzw. Artikel angezeigt werden."
+          },
+          {
+              "purpose":"Briefe an die Herausgeber",
+              "description":"Ihre Angaben in Ihren Briefen an die Herausgeber verarbeiten wir zur Veröffentlichung Ihrer Beiträge, um sich mit Themen öffentlich auseinander setzen zu können (Art. 6 Abs. 1 b, f DSGVO, journalistische Zwecke). Um Briefe an die Herausgeber anzufertigen, müssen Sie uns Ihre erforderlichen Adress- und Telekommunikationsdaten mitteilen. Mit den Briefen an die Herausgeber wird Ihr Name veröffentlicht. Sie können also nicht unter einem Pseudonym oder anonym publiziert werden. "
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+          {
+            "purpose":"Umfragen",
+            "description":"Wir verarbeiten Ihre in Umfragen mitgeteilten Daten für die Abwicklung und Auswertung der jeweiligen Umfrage, deren Zwecke jeweils bei der Umfrage angegeben sind (Art. 6 Abs. 1 b, f DSGVO). Die Pflichtangaben benötigen wir, um plausible Ergebnisse zu generieren."
+          },
+          {
+            "purpose":"Bestellungen, Anzeigen und Abonnements ",
+            "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+        },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          },
+          {
+            "name":"Zenloop GmbH",
+            "country":null,
+            "division":null,
+            "address":null,
+            "representative":null,
+            "category":"Umfrage-Software-Dienstleister"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Bonitätsauskunft löschen wir nach unserer Entscheidung über die Begründung, Durchführung oder Beendigung des Vertragsverhältnisses.",
+              "aggregationFunction":"min"
+          },
+          {
+              "purposeConditional":"Die veröffentlichten Briefe an die Herausgeber können online abgerufen werden, bis das entsprechende Thema nicht mehr aktuell bzw. relevant ist. Danach werden sie in unseren Archiven aufbewahrt.",
+              "aggregationFunction":"max"
+          },
+          {
+              "purposeConditional":"Ihre für Werbezwecke erhobenen Daten speichern und verarbeiten wir, solange der Werbezweck besteht bzw. bis uns ein Widerruf Ihrer Einwilligung oder Ihr Widerspruch gegen die Verarbeitung Ihrer Daten für Werbezwecke erreicht. Soweit für vorstehende Zwecke nicht erforderlich, löschen wir Daten aus Ihrer Teilnahme an Gewinnspielen oder Verkaufsförderungsmaßnahmen nach Durchführung des jeweiligen Gewinnspiels bzw. der jeweiligen Verkaufsförderungsmaßnahmen, es sei denn, wir sind zur Aufbewahrung verpflichtet (z.B. im Falle eines Gewinns werden Handels- bzw. Geschäftsbriefe für 10 Jahre aufbewahrt, § 147 AO, § 257 HGB).",
+              "aggregationFunction":"max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+       {
+        "_id": "bd5ae3dd-d596-49b3-af39-b38603eccfa1",
+        "category": "Abonnementdaten",
+        "purposes": [
+          {
+              "purpose":"Registrierung",
+              "description":"Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche "
+          },
+          {
+              "purpose":"Missbrauchsvermeidung",
+              "description":"Wir verarbeiten Ihrer Registrierungsdaten außerdem zum Zwecke der Missbrauchsvermeidung und zur internen Erlöszuordnung. "
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | F.A.Z. Newsletter",
+              "description":"Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | Web-Push-Nachrichten",
+              "description":"Bei Web-Push-Benachrichtigungen handelt es sich um regelmäßige Informationen zu den wichtigsten Ereignissen des Tages, die mithilfe unseres beauftragten Push-Dienstleisters an Ihren Browser bzw. Ihr Endgerät gesendet und dort priorisiert (in der Regel im Header des Browsers) dargestellt werden. Als besonderer Service werden Ihre über Push-Nachrichten aufgerufenen Artikel ausgewertet, sodass Ihnen in späteren Push-Nachrichten möglichst für Sie passende Nachrichten bzw. Artikel angezeigt werden."
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+          {
+            "purpose":"Umfragen",
+            "description":"Wir verarbeiten Ihre in Umfragen mitgeteilten Daten für die Abwicklung und Auswertung der jeweiligen Umfrage, deren Zwecke jeweils bei der Umfrage angegeben sind (Art. 6 Abs. 1 b, f DSGVO). Die Pflichtangaben benötigen wir, um plausible Ergebnisse zu generieren."
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "ff05d2f7-4d0a-43bd-90b2-f6e18a7ebd57",
+        "category": "Finanzdaten",
+        "purposes": [
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":"Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "a206374f-bfb3-45e5-830e-95073565b04a",
+        "category": "Bewerbungsdaten",
+        "purposes": [
+          {
+            "purpose": "Kontakt und Anfragen ",
+            "description": "Die Mitteilung von als Pflichtangaben gekennzeichneten Adress- und Telekommunikationsdaten ist dabei erforderlich, um Ihr Anliegen bearbeiten und beantworten zu können. Die freiwillige Angabe weiterer Daten erleichtert uns die Bearbeitung Ihrer Anfrage. Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+          {
+            "purpose":"Umfragen",
+            "description":"Wir verarbeiten Ihre in Umfragen mitgeteilten Daten für die Abwicklung und Auswertung der jeweiligen Umfrage, deren Zwecke jeweils bei der Umfrage angegeben sind (Art. 6 Abs. 1 b, f DSGVO). Die Pflichtangaben benötigen wir, um plausible Ergebnisse zu generieren."
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      },
+      {
+        "_id": "f3aaf32d-0302-41dd-b6c8-e213b28d33ef",
+        "category": "IP Adresse",
+        "purposes": [
+          {
+            "purpose": "Kontakt und Anfragen ",
+            "description": "Die Mitteilung von als Pflichtangaben gekennzeichneten Adress- und Telekommunikationsdaten ist dabei erforderlich, um Ihr Anliegen bearbeiten und beantworten zu können. Die freiwillige Angabe weiterer Daten erleichtert uns die Bearbeitung Ihrer Anfrage. Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "purpose":"Registrierung",
+              "description":"Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche "
+          },
+          {
+              "purpose":"Missbrauchsvermeidung",
+              "description":"Wir verarbeiten Ihrer Registrierungsdaten außerdem zum Zwecke der Missbrauchsvermeidung und zur internen Erlöszuordnung. "
+          },
+          {
+              "purpose":"Bestellungen, Anzeigen und Abonnements ",
+              "description":"Bei einer Bestellung, der Aufgabe einer Anzeige, einem Abonnement oder sonstigen vertragsbezogenen Anfragen verarbeiten wir Ihre personenbezogenen Daten zunächst zur Abwicklung der Bestellung bzw. des Abonnements, zur Schaltung der Anzeige und zur Rechnungsstellung "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | F.A.Z. Newsletter",
+              "description":"Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern "
+          },
+          {
+              "purpose":"Redaktionelle Nachrichten | Web-Push-Nachrichten",
+              "description":"Bei Web-Push-Benachrichtigungen handelt es sich um regelmäßige Informationen zu den wichtigsten Ereignissen des Tages, die mithilfe unseres beauftragten Push-Dienstleisters an Ihren Browser bzw. Ihr Endgerät gesendet und dort priorisiert (in der Regel im Header des Browsers) dargestellt werden. Als besonderer Service werden Ihre über Push-Nachrichten aufgerufenen Artikel ausgewertet, sodass Ihnen in späteren Push-Nachrichten möglichst für Sie passende Nachrichten bzw. Artikel angezeigt werden."
+          },
+          {
+              "purpose":"Briefe an die Herausgeber",
+              "description":"Ihre Angaben in Ihren Briefen an die Herausgeber verarbeiten wir zur Veröffentlichung Ihrer Beiträge, um sich mit Themen öffentlich auseinander setzen zu können (Art. 6 Abs. 1 b, f DSGVO, journalistische Zwecke). Um Briefe an die Herausgeber anzufertigen, müssen Sie uns Ihre erforderlichen Adress- und Telekommunikationsdaten mitteilen. Mit den Briefen an die Herausgeber wird Ihr Name veröffentlicht. Sie können also nicht unter einem Pseudonym oder anonym publiziert werden. "
+          },
+          {
+              "purpose":"Werbung",
+              "description":"Postwerbung und Kundenanalysen, Telefonwerbung, E-Mail-Werbung, Gewinnspiele und Verkaufsförderungsmaßnahmen"
+          },
+          {
+            "purpose":"Umfragen",
+            "description":"Wir verarbeiten Ihre in Umfragen mitgeteilten Daten für die Abwicklung und Auswertung der jeweiligen Umfrage, deren Zwecke jeweils bei der Umfrage angegeben sind (Art. 6 Abs. 1 b, f DSGVO). Die Pflichtangaben benötigen wir, um plausible Ergebnisse zu generieren."
+          },
+        {
+          "purpose":"Interne Tests unserer Systeme",
+          "description":"Um ein hohes Maß an Qualität und Sicherheit unserer Systeme zu gewährleisten, testen wir die Systeme regelmäßig. Die Tests erfolgen vor der Einführung neuer Systeme, aber auch im laufenden Betrieb eines Systems. Hierzu werden in der Regel fiktive oder anonyme Testdaten verwendet, auch soweit es sich um Systeme handelt, mit denen personenbezogene Daten verarbeitet werden (sollen). In Ausnahmefällen kann es aber auch vorkommen, dass für diese Testzwecke personenbezogene Daten, die wir zunächst für die Zwecke der Abschnitte 'Kontakt und Anfragen' bis 'Umfragen' erhoben haben, verarbeitet werden müssen (Art. 6 Abs. 1 f DSGVO), da ansonsten bestimmte Systeme im Hinblick auf die gewünschte Qualität und Sicherheit nicht ordnungsgemäß getestet werden können (unser berechtigtes Interesse). Dies geschieht dann in der Regel pseudonymisiert bzw. immer nur im erforderlichen Umfang. Nach Vornahme der Tests werden diese ausgewertet und sodann umgehend anonymisiert."
+        },
+        {
+          "purpose":"Maßnahmen zur Verhinderung missbräuchlicher Nutzung / Erlöszuordnung",
+          "description":"Abonnements dürfen nur entsprechend der vertraglichen Vereinbarungen mit uns genutzt werden. Um eine missbräuchliche Nutzung digitaler Abonnements über die vertraglich vereinbarten Zwecke hinaus zu erkennen - etwa weil sie nicht wie vorgesehen nur von Verbrauchern genutzt werden oder Zugangsdaten offensichtlich in unzulässigem Umfang weitergegeben wurden – und ggf. reagieren zu können, werden bei der Nutzung des entsprechenden Abonnements, auch unter Einsatz von Cookies bzw. ähnlicher Technologien generierte Daten (Datum und Uhrzeit der Nutzung, digitales F.A.Z.-Produkt, Kunden-ID, Login aus der Online-Registrierung) in unserer internen Datenbank zum Schutz unserer Rechte verarbeitet und ungewöhnliche Nutzungen identifiziert (§ 25 Abs. 2 Nr. 2 TTDSG, Art.6 Abs.1 b, f DSGVO). "
+        }
+        ],
+        "legalBases": [
+          {
+            "reference": "DSGVO-6-1-a",
+            "description": "Mit Ihrer jeweils jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie per E-Mail mit unseren verschiedenen redaktionellen FAZ-Newslettern (Art. 6 Abs. 1 a DSGVO). Mit Ihrer jederzeitig widerruflichen, ausdrücklichen Einwilligung informieren wir Sie mit Web-Push-Benachrichtigungen (Art. 6 Abs. 1 a DSGVO). "
+          },
+          {
+              "reference": "DSGVO-6-1-b",
+              "description": "Wir verarbeiten Ihre erforderlichen Registrierungsangaben (Pflichtangaben, z.B. Name, E-Mail-Adresse, Benutzername und Passwort) sowie die im Rahmen Ihrer Nutzung freiwillig mitgeteilten weiteren Daten (z.B. Ihre Abonnementnummer, Ihre Urlaubstermine und -adresse für unseren Urlaubsservice) für die jeweilige Einrichtung und Ihre Nutzung der Funktionen und Services unserer passwortgeschützten Bereiche (Art. 6 Abs. 1 b, f DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-c",
+              "description": "Zur Einholung Ihrer Einwilligungen verwenden wir online das sog. Double-Opt-in-Verfahren, um zu vermeiden, dass unsere E-Mail-Nachrichten an E-Mail-Adressen von Personen versandt werden, die diese nicht angefordert haben. Hierbei wird nach den Vorgaben der Datenschutzaufsichtsbehörden auch Ihre IP-Adresse erfasst und zu Dokumentationszwecken gespeichert (Art. 7 Abs. 1, Art. 6 Abs. 1 c DSGVO)."
+            },
+            {
+              "reference": "DSGVO-6-1-f",
+              "description": "Wir verarbeiten Ihre Angaben zur Beantwortung Ihrer Anfragen (Art. 6 Abs. 1 b, f DSGVO)."
+            }
+        ],
+        "legitimateInterests": [
+          {
+            "exists": true,
+            "reasoning":" Das Erbringen möglichst guter Leistungen für Sie, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten."
+          },
+          {
+              "exists":true,
+              "reasoning":"Unser berechtigtes Interesse im Sinne des Art.6 Abs.1 f DSGVO bei Werbung ist immer auch die Förderung des Absatzes unseres Unternehmens."
+          },
+          {
+            "exists":true,
+            "reasoning":"Das Erzielen möglichst plausibler Umfrage-Ergebnisse, ist unser berechtigtes Interesse, soweit wir Ihre Daten auf dieser Rechtsgrundlage verarbeiten. "
+          }
+        ],
+        "recipients": [
+          {
+            "name": "SCHUFA Holding AG",
+            "country": "DE",
+            "division": null,
+            "address": "SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden",
+            "representative": null,
+            "category": "Altersverifikation, Bonitätsprüfung"
+          },
+          {
+              "name": "Creditreform Frankfurt Emil Vogt KG",
+              "country": "DE",
+              "division": null,
+              "address": "Creditreform Frankfurt Emil Vogt KG, Börsenplatz 7-11, 60313 Frankfurt (Main)",
+              "representative": null,
+              "category": "Bonitätsprüfung, Inkasso"
+          },
+          {
+              "name": "ferret go GmbH",
+              "country": "DE",
+              "division": null,
+              "address": "ferret go GmbH, Brauerstraße 14, 16321 Bernau",
+              "representative": null,
+              "category": "Analyse von Nutzerkommentaren hinsichtlich der Einhaltung unserer Netiquette-Regeln"
+          },
+          {
+            "name": "Podigee GmbH",
+            "country": "DE",
+            "division": null,
+            "address": null,
+            "representative": null,
+            "category": "Dienstanbieter Podcasts"
+        },
+        {
+          "name": "knowhere GmbH",
+          "country": "DE",
+          "division": null,
+          "address": "knowhere GmbH, Karolinenstraße 9, 20357 Hamburg",
+          "representative": null,
+          "category": "Dienstanbieter Chatbot"
+      },
+      {
+        "name": "Tickaroo GmbH",
+        "country": "DE",
+        "division": null,
+        "address": "Tickaroo GmbH, Waffnergasse 8, 93047 Regensburg",
+        "representative": null,
+        "category": "Dienstanbieter Live-Ticker"
+    }
+        ],
+        "storage": [
+          {
+            "temporal": "P6Y",
+            "purposeConditional":"Die Angaben aus Ihrer Anfrage speichern wir nach Beantwortung der Anfrage im Regelfall für 1 Jahr für den Fall weiterer Nachfragen, falls es sich nicht um Handels- oder Geschäftsbriefe handelt; diese speichern wir nach den gesetzlichen Vorschriften für mindestens sechs Jahre (§ 257 Abs. 1 Nr. 2, Abs. 4 HGB, Art. 6 Abs. 1 c DSGVO).",
+            "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Die Registrierungsangaben für Ihre Online-Konten speichern wir, bis Sie Ihr jeweiliges Online-Konto wieder aufheben, soweit keine anderen Aufbewahrungszwecke entgegenstehen. Diese können sich z.B. aus Ihren Bestellungen/Anzeigen/Abonnements (s. Briefe an die Herausgeber) oder aus Ihrer veröffentlichten Lesermeinung bzw. Ihrem veröffentlichten Kommentar ergeben (s. Lesermeinungen).",
+              "aggregationFunction": "max"
+          },
+          {
+              "purposeConditional":"Ihre für die Bestellung, die Anzeige bzw. das Abonnement relevanten Daten und die dazu gehörigen Dokumente (z.B. Handelsbriefe, Rechnungen) speichern wir gemäß den gesetzlichen Anforderungen nach Abschluss des Vertrages nach den gesetzlichen Vorschriften für mindestens sechs Jahre bzw. zehn Jahre (§ 257 Abs. 4 HGB, § 147 Abs. 3 AO, Art. 6 Abs. 1 c DSGVO). Andere Daten werden spätestens nach einem Jahr gelöscht.",
+              "aggregationFunction": "max"
+          },
+          {
+            "purposeConditional":"Die angegebenen Speicherfristen können sich entsprechend verlängern, wenn im Einzelfall, insbesondere wenn die Daten für verschiedene Zwecke verarbeitet werden, eine längere gesetzliche oder vertragliche Aufbewahrungsfrist besteht.",
+            "aggregationFunction":"max" 
+         },
+          {
+              "temporal": "P1Y",
+              "aggregationFunction": "max"
+          }
+        ],
+        "nonDisclosure": {
+          "consequences": null,
+          "legalRequirement": null,
+          "contractualRegulation": true,
+          "obligationToProvide": false
+        }
+      }
+    ],
+    "thirdCountryTransfers": [
+      {
+        "country": "Drittland",
+        "adequacyDecision": {
+          "available": true,
+          "description": "Für manche Drittländer hat die Europäische Kommission beschlossen, dass diese ein angemessenes Datenschutzniveau bieten (z.B. Schweiz, Kanada, Argentinien). "
+        },
+        "appropriateGuarantees": {
+          "available": true
+        },
+        "presenceOfEnforceableRightsAndEffectiveRemedies": {
+          "available": false
+        },
+        "standardDataProtectionClause": {
+          "available": true,
+          "description": "Soweit wir Daten in ein Drittland übermitteln, für das ein solcher Angemessenheitsbeschluss nicht vorliegt, beruht der entsprechende Datentransfer – es sei denn, in dieser Datenschutzerklärung anders angegeben – auf einem Vertrag zwischen uns und dem relevanten Empfänger unter Verwendung der Standarddatenschutzklauseln der Europäischen Union, und gegebenenfalls weiteren mit dem Empfänger vereinbarten ergänzenden Maßnahmen, um ein angemessenes Datenschutzniveau zu gewährleisten. Kopien dieser Standardvertragsklauseln können Sie bei unserem Datenschutzbeauftragten anfragen."
+        }
+      }
+    ],
+    "accessAndDataPortability": {
+      "available": true,
+      "description": "Außerdem haben Sie bei Vorliegen der gesetzlichen Voraussetzungen ein Recht auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Widerspruch (Art. 21 DSGVO), dazu im Kapitel Jederzeitiges Widerspruchs- und Widerrufsrecht, und Datenübertragbarkeit (Art. 20 DSGVO).",
+      "url": null,
+      "email": "datenschutz@faz.net",
+      "identificationEvidences": null,
+      "administrativeFee": {
+        "amount": null,
+        "currency": null
+      },
+      "dataFormats": null
+    },
+    "rightToInformation": {
+      "available": true,
+      "description": null,
+      "url": null,
+      "email": "datenschutz@faz.net",
+      "identificationEvidences": null
+    },
+    "rightToRectificationOrDeletion": {
+      "available": true,
+      "description": "Außerdem haben Sie bei Vorliegen der gesetzlichen Voraussetzungen ein Recht auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Widerspruch (Art. 21 DSGVO), dazu im Kapitel Jederzeitiges Widerspruchs- und Widerrufsrecht, und Datenübertragbarkeit (Art. 20 DSGVO).",
+      "url": null,
+      "email": "datenschutz@faz.net",
+      "identificationEvidences": null
+    },
+    "rightToDataPortability": {
+      "available": true,
+      "description": "Außerdem haben Sie bei Vorliegen der gesetzlichen Voraussetzungen ein Recht auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Widerspruch (Art. 21 DSGVO), dazu im Kapitel Jederzeitiges Widerspruchs- und Widerrufsrecht, und Datenübertragbarkeit (Art. 20 DSGVO).",
+      "url": null,
+      "email": "datenschutz@faz.net",
+      "identificationEvidences": null
+    },
+    "rightToWithdrawConsent": {
+      "available": true,
+      "description": "Außerdem haben Sie bei Vorliegen der gesetzlichen Voraussetzungen ein Recht auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Widerspruch (Art. 21 DSGVO), dazu im Kapitel Jederzeitiges Widerspruchs- und Widerrufsrecht, und Datenübertragbarkeit (Art. 20 DSGVO).",
+      "url": null,
+      "email": "datenschutz@faz.net",
+      "identificationEvidences": null
+    },
+    "rightToComplain": {
+      "available": true,
+      "description": "Schließlich haben Sie das Recht auf Beschwerde bei einer zuständigen Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO, § 19 BDSG).",
+      "url": null,
+      "email": "datenschutz@faz.net",
+      "identificationEvidences": null,
+      "supervisoryAuthority": {
+        "name": null,
+        "address": null,
+        "country": null,
+        "email": null,
+        "phone": null
+      }
+    },
+    "automatedDecisionMaking": {
+      "logicInvolved": null,
+      "inUse": null,
+      "scopeAndIntendedEffects": null
+    },
+    "changesOfPurpose": [
+      {
+        "description": null,
+        "affectedDataCategories": null,
+        "plannedDateOfChange": null,
+        "urlOfNewVersion": null
+      }
+    ]
+  }, 
+  {
     "_id": { "$oid": "62d040a5e7dfaf542d2f3765" },
     "meta": {
       "_id": "90eeb36e-3d54-4b0a-88b7-f4565cd66920",
